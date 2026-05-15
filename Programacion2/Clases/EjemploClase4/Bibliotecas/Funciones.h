@@ -1,0 +1,9 @@
+//
+// Created by carlo on 4/1/2026.
+//
+
+#ifndef EJEMPLOCLASE4_FUNCIONES_H
+#define EJEMPLOCLASE4_FUNCIONES_H
+
+
+#endif //EJEMPLOCLASE4_FUNCIONES_H

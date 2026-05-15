@@ -1,0 +1,16 @@
+//
+// Created by carlo on 5/14/2026.
+//
+
+#ifndef EJEMPLOUSOOPCONCLASES_ACCESORIO_H
+#define EJEMPLOUSOOPCONCLASES_ACCESORIO_H
+
+
+
+class Accesorio {
+
+};
+
+
+
+#endif //EJEMPLOUSOOPCONCLASES_ACCESORIO_H
