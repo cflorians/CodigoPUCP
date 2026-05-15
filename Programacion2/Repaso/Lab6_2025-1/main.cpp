@@ -5,12 +5,12 @@ using namespace std;
 
 int main(int argc, char** argv) {
     
-    MinisterioDeTransporte ministerio;
+    MinisterioDeTransporte ministerioDeTransporte;
 
-    ministerio < "Archivos/TablaDeInfracciones.csv";
-    ministerio <= "Archivos/EmpresasRegistradas.csv";
-    ministerio <<= "Archivos/InfraccionesCometidas.csv";
-    ministerio >> "Reportes/ReporteParaElMinisterio.txt";
+    ministerioDeTransporte < "Archivos/TablaDeInfracciones.csv";
+    ministerioDeTransporte <= "Archivos/EmpresasRegistradas.csv";
+    ministerioDeTransporte <<= "Archivos/InfraccionesCometidas.csv";
+    ministerioDeTransporte >> "Reportes/ReporteParaElMinisterio.txt";
     
     return 0;
 }
