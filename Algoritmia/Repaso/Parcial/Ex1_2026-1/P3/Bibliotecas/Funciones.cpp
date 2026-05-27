@@ -65,8 +65,13 @@ void auto_healing(Lista& lista) {
         anterior = actual;
         siguiente = actual->next;
         if (actual->dato.is_active == false) {
+            // Primero determinamos el next
             while (siguiente->dato.is_active == false) siguiente = siguiente->next;
-            
+            actual = siguiente;
+            anterior->next = actual;
+
+            // ahora revisamos el skip_next
+            if (actual->next->dato.is_active == false) anterior = anterior->next;
         }
     }
 }
