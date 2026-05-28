@@ -1,10 +1,11 @@
 //
 // Created by Carlos on 28/05/2026.
 //
-
+#include <cstring>
+#include <fstream>
+using namespace std;
 #include "Alumno.h"
 
-#include <cstring>
 
 Alumno::Alumno() {
     nombre = nullptr;
@@ -69,3 +70,12 @@ void Alumno::setTotal(double tot) {
 double Alumno::getTotal() const {
     return total;
 }
+
+void Alumno::leer(ifstream &arch) {
+    // 202123703,GAMARRA/TABORI/PAUL-RONAL,5,30
+    int cod;
+    char nombre[100];
+    int escala;
+    
+}
+

@@ -28,6 +28,8 @@ public:
 
     void setTotal(double tot);
     double getTotal() const;
+
+    void leer(ifstream& arch);
 };
 
 #endif //EJERCICIOLABORATORIOHERENCIA_ALUMNO_H
