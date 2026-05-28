@@ -11,6 +11,7 @@ private:
     bool dentroCasa;
 public:
     Gato();
+    Gato(const char* nomb, int ed, double pe, bool dentroCasa);
     ~Gato();
 
     void setDentroCasa(bool dentro);

@@ -11,6 +11,7 @@ private:
     bool esDomestico;
 public:
     Perro();
+    Perro(const char *nomb, int ed, double pe, bool esDomestico);
     ~Perro();
 
     void setDomestico(bool domestico);

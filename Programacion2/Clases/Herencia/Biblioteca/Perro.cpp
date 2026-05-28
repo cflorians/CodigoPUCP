@@ -9,6 +9,10 @@ Perro::Perro() {
     esDomestico = true;
 }
 
+Perro::Perro(const char *nomb, int ed, double pe, bool esDomestico):Animal(nomb, ed, pe) {
+    this->esDomestico = esDomestico;
+}
+
 Perro::~Perro() {
     cout << "Destruyendo perro" << endl;
 }

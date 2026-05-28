@@ -7,6 +7,10 @@ Gato::Gato() {
     dentroCasa = false;
 }
 
+Gato::Gato(const char *nomb, int ed, double pe, bool dentroCasa):Animal(nomb, ed, pe) {
+    this->dentroCasa = dentroCasa;
+}
+
 Gato::~Gato() {
     cout << "Destruyendo a gato" << endl;
 }
