@@ -21,6 +21,8 @@ public:
 
     void setTotal(double total);
     double getTotal() const;
+
+    void leer(ifstream& arch);
 };
 
 #endif //EJERCICIOLABORATORIOHERENCIA_VIRTUAL_H

@@ -3,7 +3,8 @@
 //
 
 #include <cstring>
-
+#include <fstream>
+using namespace std;
 #include "Virtual.h"
 
 Virtual::Virtual() {
@@ -23,14 +24,17 @@ Virtual::Virtual(const Virtual &orig) {
 }
 
 void Virtual::operator=(const Virtual &orig) {
+    Alumno::operator=(orig);
     total = orig.total;
     setLicencia(orig.licencia);
 }
 
 void Virtual::setLicencia(const char *lic) {
-    if (licencia) delete[] licencia;
-    licencia = new char[strlen(lic)+1];
-    strcpy(licencia,lic);
+    if (licencia) delete[] licencia; licencia = nullptr;
+    if (lic != nullptr) {
+        licencia = new char[strlen(lic)+1];
+        strcpy(licencia,lic);
+    }
 }
 
 void Virtual::getLicencia(char *lic) {
@@ -44,4 +48,12 @@ void Virtual::setTotal(double total) {
 
 double Virtual::getTotal() const {
     return total;
+}
+
+void Virtual::leer(ifstream &arch) {
+    char lic[20];
+    Alumno::leer(arch);
+    if (arch.eof()) return;
+    arch.getline(lic, 20, '\n');
+    setLicencia(lic);
 }

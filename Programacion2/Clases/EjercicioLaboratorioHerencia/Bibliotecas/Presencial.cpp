@@ -11,6 +11,7 @@ Presencial::Presencial() {
 }
 
 void Presencial::operator=(const Presencial &org) {
+    Alumno::operator=(org);
     this->total = org.total;
     this->recargo = org.recargo;
 }
@@ -32,5 +33,12 @@ double Presencial::getTotal() const {
 }
 
 void Presencial::leer(ifstream &arch) {
+    Alumno::leer(arch);
+    if (arch.eof()) return;
+    arch >> recargo;
+    arch.get();
+}
 
+void operator<<(ifstream &arch, const Presencial &org) {
+    
 }

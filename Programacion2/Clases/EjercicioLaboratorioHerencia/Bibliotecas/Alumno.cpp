@@ -46,8 +46,10 @@ int Alumno::getCodigo() const {
 
 void Alumno::setNombre(const char *nomb) {
     if (nombre) delete[] nombre;
-    nombre = new char[strlen(nomb)+1];
-    strcpy(nombre, nomb);
+    if (nomb) {
+        nombre = new char[strlen(nomb)+1];
+        strcpy(nombre, nomb);
+    }
 }
 
 void Alumno::getNombre(char *nomb) {
@@ -72,10 +74,14 @@ double Alumno::getTotal() const {
 }
 
 void Alumno::leer(ifstream &arch) {
-    // 202123703,GAMARRA/TABORI/PAUL-RONAL,5,30
-    int cod;
-    char nombre[100];
-    int escala;
-    
+    // 202123703,GAMARRA/TABORI/PAUL-RONAL,5, 30
+    char nomb[100];
+    arch >> codigo;
+    arch.get();
+    if (arch.eof()) return;
+    arch.getline(nomb,100,',');
+    setNombre(nomb);
+    arch >> escala;
+    arch.get();
 }
 

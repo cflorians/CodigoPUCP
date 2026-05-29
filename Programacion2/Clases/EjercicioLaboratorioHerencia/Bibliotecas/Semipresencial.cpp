@@ -1,7 +1,8 @@
 //
 // Created by Carlos on 28/05/2026.
 //
-
+#include <fstream>
+using namespace std;
 #include "Semipresencial.h"
 
 Semipresencial::Semipresencial() {
@@ -23,4 +24,10 @@ void Semipresencial::setTotal(double total) {
 
 double Semipresencial::getTotal() const {
     return total;
+}
+
+void Semipresencial::leer(ifstream &arch) {
+    Alumno::leer(arch);
+    if (arch.eof()) return;
+    arch >> descuento;
 }

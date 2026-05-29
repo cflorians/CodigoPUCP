@@ -18,6 +18,8 @@ public:
 
     void setTotal(double total);
     double getTotal() const;
+
+    void leer(ifstream& arch);
 };
 
 #endif //EJERCICIOLABORATORIOHERENCIA_SEMIPRESENCIAL_H

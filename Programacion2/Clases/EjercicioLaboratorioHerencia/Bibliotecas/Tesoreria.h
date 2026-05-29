@@ -11,17 +11,19 @@
 
 class Tesoreria {
 private:
-    Presencial* lpresencial;
-    Semipresencial lsemipresencial[100];
-    Virtual lvirtual[100];
+    Presencial* lpresencial; // memoria exacta
+    Semipresencial lsemipresencial[100]; // uso de arreglos
+    Virtual* lvirtual; // memoria por incrementos
     Escala lescala[10];
 public:
     Tesoreria();
     ~Tesoreria();
 
+    void incrementarLosEspacios(Virtual*& lvirtual, int& numDatos, int& capacidad);
+
     void cargaescalas(const char* nombArch);
     void cargaalumnos(const char* nombArch);
-    void actualiza(int creditos);
+    void actualiza(double creditos);
     void imprime(const char* nombArch);
 };
 

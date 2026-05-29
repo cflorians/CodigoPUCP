@@ -21,6 +21,10 @@ public:
 
     void setTotal(double total);
     double getTotal() const;
+
+    void leer(ifstream& arch);
 };
+
+void operator << (ifstream& arch, const Presencial& org);
 
 #endif //EJERCICIOLABORATORIOHERENCIA_PRESENCIAL_H

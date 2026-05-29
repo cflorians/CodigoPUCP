@@ -31,10 +31,10 @@ void operator >> (ifstream& arch, Escala& escala) {
     int codigo;
     double precio;
     arch >> codigo;
+    if (arch.eof()) return;
     arch.get();
     arch >> precio;
     arch.get();
-    if (arch.eof()) return;
 
     escala.setCodigo(codigo);
     escala.setPrecio(precio);
