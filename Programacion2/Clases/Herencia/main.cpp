@@ -6,6 +6,7 @@ using namespace std;
 
 int main() {
 
+    // Inicializamos gato con parametros
     Gato gato("Dali", 5, 5.6, true);
     // gato.setNombre("Dali");
     // gato.setEdad(5);
