@@ -3,17 +3,19 @@ using namespace std;
 
 int encuentraMayorIncremento(int A[], int ini, int med, int fin) {
     int contador = 0;
-    int contador_izq = 0, contador_der = 0;
+    int contador_izq = 1, contador_der = 1;
     for (int i=med; i > ini; i--) { // analizo los dias hacia la izq
         if (A[i-1]<A[i]) contador_izq++;
         else break;
     }
-    for (int i=med+1; i < fin-1; i++) { // analizo los dias hacia la der
+    for (int i=med+1; i < fin; i++) { // analizo los dias hacia la der
         if (A[i]<A[i+1]) contador_der++;
         else break;
     }
-    if (A[med]<A[med+1]) // si realmente hay secuencia, sumo los contadores
+    if (A[med]<A[med+1]) { // si realmente hay secuencia, sumo los contadores
         return contador_izq + contador_der;
+    }
+    else return 0;
 }
 
 int maximo3(int a, int b, int c){
@@ -39,7 +41,7 @@ int main() {
     int A[]{10,20,15,12,10,13,18};
     int n = sizeof(A)/sizeof(A[0]);
 
-    cout << "Intervalo máximo de incremento" << rebroteCovid(A, 0, n-1) << endl;
+    cout << "Intervalo máximo de incremento: " << rebroteCovid(A, 0, n-1) << endl;
 
     return 0;
 }
