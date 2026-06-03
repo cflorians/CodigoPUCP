@@ -18,7 +18,7 @@ Animal::~Animal() {
     if (nombre) delete[] nombre;
     edad = 0;
     peso = 0;
-    cout << "Destruyendo a animal" << endl;
+    //cout << "Destruyendo a animal" << endl;
 }
 
 Animal::Animal(const char *nomb, int ed, double pe) {
@@ -72,4 +72,8 @@ void Animal::mostrar() {
     cout << "Nombre: " << nombre << endl;
     cout << "Edad: " << edad << " anios" << endl;
     cout << "Peso: " << peso << " kg" << endl;
+}
+
+void Animal::comer() {
+    cout << nombre << " está comiendo" << endl;
 }

@@ -28,6 +28,7 @@ public:
     double getPeso() const;
 
     void mostrar();
+    virtual void comer();
 };
 
 

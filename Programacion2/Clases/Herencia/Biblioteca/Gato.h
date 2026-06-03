@@ -18,6 +18,8 @@ public:
     bool getDentroCasa() const;
 
     void mostrar();
+
+    void comer();
 };
 
 #endif //HERENCIA_GATO_H

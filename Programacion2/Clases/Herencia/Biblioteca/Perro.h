@@ -18,6 +18,8 @@ public:
     bool getDomestico() const;
 
     void mostrar();
+
+    void comer();
 };
 
 

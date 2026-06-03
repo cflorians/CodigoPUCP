@@ -12,7 +12,7 @@ Gato::Gato(const char *nomb, int ed, double pe, bool dentroCasa):Animal(nomb, ed
 }
 
 Gato::~Gato() {
-    cout << "Destruyendo a gato" << endl;
+    //cout << "Destruyendo a gato" << endl;
 }
 
 void Gato::setDentroCasa(bool dentro) {
@@ -29,4 +29,8 @@ void Gato::mostrar() {
     cout << "Vive dentro de casa?: " << (dentroCasa ? "Si" : "No") << endl;
     cout << "Hace: miau" << endl;
     cout << endl;
+}
+
+void Gato::comer() {
+    cout << "GATO: el gato come pescado" << endl;
 }
