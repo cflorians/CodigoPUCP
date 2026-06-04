@@ -1,27 +1,39 @@
-### --- CLion / JetBrains Specific ---
+# ==========================================
+# Especificos de CLion / JetBrains
+# ==========================================
 .idea/
-# Si quieres compartir la configuración de estilo de código o diccionarios con tu equipo, 
-# puedes descomentar las siguientes líneas:
+# Si quieres compartir los estilos de codigo del equipo o diccionarios, 
+# puedes descomentar las siguientes lineas:
 # !.idea/codeStyles/
 # !.idea/dictionaries/
 
-# Archivos de usuario locales (guardan la disposición de las ventanas, pestañas abiertas, etc.)
+# Quitar archivos de usuario especificos (diseño de pestañas, tareas locales, etc.)
 .idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/**/usageView.xml
-.idea/**/azure.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionary.xml
 .idea/**/shelf/
 
-# Archivos temporales de CMake generados por CLion (CORREGIDO PARA SUB-CARPETAS)
-**/cmake-build-debug/*
-!**/cmake-build-debug/Archivos/
-!**/cmake-build-debug/Reportes/
-**/cmake-build-debug/Reportes/*
+# Archivos de cmake-build creados por CLion
+cmake-build-*/
 
+# ==========================================
+# Sistemas de Construccion (CMake / Ninja / Make)
+# ==========================================
+# Por si acaso compilas por consola fuera de CLion
+CMakeFiles/
+CMakeCache.txt
+CMakeSettings.json
+CMakeUserPresets.json
+Makefile
+cmake_install.cmake
+compile_commands.json
 .cmake/
 
-### --- C / C++ Compilation Artifacts ---
-# Archivos objeto y librerías compiladas
+# ==========================================
+# Artefactos de Compilacion y Binarios
+# ==========================================
+# Objetos y Librerias
 *.o
 *.obj
 *.a
@@ -29,11 +41,17 @@
 *.so
 *.dylib
 
-# Ejecutables finales (puedes añadir nombres específicos si no tienen extensión)
+# Ejecutables finales
 *.exe
 *.out
 *.app
 
-### --- OS Specific (Opcional) ---
+# Archivos de depuracion (Debug symbols)
+*.pdb
+*.dSYM/
+
+# ==========================================
+# Temporales del Sistema Operativo
+# ==========================================
 .DS_Store
 Thumbs.db
