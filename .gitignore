@@ -12,8 +12,12 @@
 .idea/**/azure.xml
 .idea/**/shelf/
 
-# Archivos temporales de CMake generados por CLion
-cmake-build-*/
+# Archivos temporales de CMake generados por CLion (MODIFICADO PARA LAS EXCEPCIONES)
+cmake-build-debug/*
+!cmake-build-debug/Archivos/
+!cmake-build-debug/Reportes/
+cmake-build-debug/Reportes/*
+
 .cmake/
 
 ### --- C / C++ Compilation Artifacts ---
