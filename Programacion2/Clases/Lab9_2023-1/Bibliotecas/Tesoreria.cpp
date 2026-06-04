@@ -15,12 +15,19 @@ void Tesoreria::cargaEscalas() {
 
     int cantDatos = 0;
     while (true) {
-
+        arch >> lescala[cantDatos];
         if (arch.eof()) break;
     }
 }
 
 void Tesoreria::cargaAlumnos() {
+    ifstream arch("ArchivoDeDatos/Alumnos.csv", ios::in);
+    if (not arch.is_open()) {
+        cout << "Error en el archivo de entrada" << endl;
+        exit(1);
+    }
+
+    
 }
 
 void Tesoreria::actualizaBoleta() {
