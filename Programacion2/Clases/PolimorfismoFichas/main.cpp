@@ -12,12 +12,11 @@ int main() {
     // 3. El metodo sobreescrito en la clase base debe ser virtual
     // 4. El metodo debe ser llamado con un puntero a clase
     Ficha *pt;
-    Alfil alfil;
-    Torre torre;
-
-    pt = &alfil;
+    
+    pt = new Alfil();
     pt->mover('A', 4);
 
+    pt = new Torre();
     pt = &torre;
     pt->mover('F', 5);
 
