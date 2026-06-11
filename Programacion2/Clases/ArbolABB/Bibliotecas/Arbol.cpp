@@ -47,6 +47,7 @@ void Arbol::crearArbol(const char *nombArch) {
         exit(1);
     }
 
+    // int dato;
     Persona dato;
     while (true) {
         arch >> dato;
