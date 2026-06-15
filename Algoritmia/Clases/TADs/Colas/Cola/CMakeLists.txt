@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 4.2)
-project(Colas)
+project(Cola)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Colas main.cpp
+add_executable(Cola main.cpp
         Bibliotecas/Funciones.cpp
         Bibliotecas/Funciones.h
         Bibliotecas/Elemento.h
