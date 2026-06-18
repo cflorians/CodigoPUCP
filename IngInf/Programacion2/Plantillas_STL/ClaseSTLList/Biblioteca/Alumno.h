@@ -16,6 +16,7 @@ public:
     void mostrar();
     bool aprobo();
     int getNota() const;
+    void setNota(int nota);
     void setNombre(const string& nombre);
     string getNombre() const;
     void agregarFruta(string fruta);

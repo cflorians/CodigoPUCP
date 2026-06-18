@@ -32,6 +32,10 @@ int Alumno::getNota() const {
     return nota;
 }
 
+void Alumno::setNota(int nta) {
+    nota = nta;
+}
+
 void Alumno::setNombre(const string &nomb) {
     nombre = nomb;
 }
@@ -56,8 +60,13 @@ ostream & operator << (ostream& arch, const Alumno &alumno) {
 
 ifstream & operator>>(ifstream &arch, Alumno &alumno) {
     string nombre;
-
+    getline(arch, nombre, ',');
     if (arch.eof()) return arch;
+    int nota;
+    arch >> nota;
+
+    alumno.setNombre(nombre);
+    alumno.setNota(nota);
 
     return arch;
 }
