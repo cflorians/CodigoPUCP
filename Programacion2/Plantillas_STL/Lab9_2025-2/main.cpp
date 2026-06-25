@@ -7,6 +7,8 @@
 #include <vector>
 using namespace std;
 
+#include "Bibliotecas/Categoria.h"
+
 #include "Bibliotecas/SistemaDeGestion.h"
 
 int main() {
@@ -19,6 +21,7 @@ int main() {
     sistema.cargaStreamers("Archivos/Streamers.csv");
 
     sistema.completarStreamers();
+    sistema.eliminaStreamers("English");
     sistema.mostrarReporte("Reportes/reporte.txt");
 
     return 0;

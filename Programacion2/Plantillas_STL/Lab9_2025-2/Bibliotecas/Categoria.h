@@ -4,7 +4,6 @@
 
 #ifndef LAB9_2025_2_CATEGORIA_H
 #define LAB9_2025_2_CATEGORIA_H
-#include "Streamer.h"
 
 class Categoria {
 private:

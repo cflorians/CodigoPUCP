@@ -3,8 +3,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <map>
 using namespace std;
-
 #include "Streamer.h"
 
 void Streamer::setEtiquetaStr(const string &etiqueta) {
@@ -21,6 +21,22 @@ void Streamer::setIdioma(const string &idiom) {
 
 void Streamer::setCanal(const string &ch) {
     canal = ch;
+}
+
+void Streamer::setCategoria(const Categoria &cat) {
+    categoria = cat;
+}
+
+Categoria Streamer::getCategoria() const {
+    return categoria;
+}
+
+void Streamer::insertarEtiqueta(const Etiqueta &etiqueta) {
+    etiquetasVector.push_back(etiqueta);
+}
+
+void Streamer::insertarComentario(const string &comentario) {
+    comentarios.push_back(comentario);
 }
 
 string Streamer::getEtiquetaStr() const {
@@ -56,16 +72,25 @@ void Streamer::leer(ifstream &arch) {
     getline(arch, idioma);
 }
 
-void Streamer::imprimir(ofstream &arch) {
+void Streamer::imprimir(ofstream &arch) const{
     int dd = fecha%100, mm = (fecha%10000)/100, aa = fecha/10000;
     arch << left << setw(10) << "CANAL:" << canal << endl
-         << setw(10) << "FECHA: " << setfill(' ')<< setw(2) << dd << '/' << setw(2) << mm << '/' << aa << endl
-         << setfill(' ') << setw(10) << "LENGUAJE:" << idioma << endl;
+         << setw(10) << "FECHA: " << right << setfill('0')<< setw(2) << dd << '/' << setw(2) << mm << '/' << aa << setfill(' ')<< endl
+         << left << setfill(' ') << setw(10) << "LENGUAJE:" << idioma << endl;
     arch << categoria;
     arch << "ETIQUETAS STR: " << etiquetasStr << endl;
     int i = 1;
-    for (Etiqueta etiqueta : etiquetasVector) {
-        arch << i << ") " << etiqueta << endl;
+    for (const Etiqueta& etiqueta : etiquetasVector) {
+        arch << setw(4) << right << i << ") ";
+        arch << etiqueta;
+        i++;
+    }
+    arch << "COMENTARIOS: " << endl;
+    i = 1;
+    for (const string& com : comentarios) {
+        arch << setw(4) << right << i << ") ";
+        arch << com << endl;
+        i++;
     }
 }
 
@@ -81,7 +106,7 @@ ifstream & operator>>(ifstream &arch, Streamer &streamer) {
     return arch;
 }
 
-ofstream & operator<<(ofstream &arch, Streamer &streamer) {
+ofstream & operator<<(ofstream &arch, const Streamer &streamer) {
     streamer.imprimir(arch);
     return arch;
 }

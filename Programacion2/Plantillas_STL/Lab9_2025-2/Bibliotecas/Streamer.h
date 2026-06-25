@@ -13,7 +13,7 @@ private:
     int fecha;
     Categoria categoria;
     string etiquetasStr;
-    vector<Etiqueta> etiquetasVector;
+    vector<class Etiqueta> etiquetasVector;
     string idioma;
     vector<string> comentarios;
 public:
@@ -21,17 +21,22 @@ public:
     void setFecha(int fech);
     void setIdioma(const string& idioma);
     void setCanal(const string& canal);
+    void setCategoria(const Categoria& categoria);
     string getEtiquetaStr() const;
     int getFecha() const;
     string getIdioma() const;
     string getCanal() const;
+    Categoria getCategoria() const;
+
+    void insertarEtiqueta(const Etiqueta& etiqueta);
+    void insertarComentario(const string& comentario);
 
     void leer(ifstream& arch);
-    void imprimir(ofstream& arch);
+    void imprimir(ofstream& arch) const;
 
     bool operator < (const Streamer& str);
 };
 ifstream& operator>> (ifstream& arch, Streamer& streamers);
-ofstream& operator<< (ofstream& arch, Streamer& streamers);
+ofstream& operator<< (ofstream& arch, const Streamer& streamers);
 
 #endif //LAB9_2025_2_STREAMERS_H

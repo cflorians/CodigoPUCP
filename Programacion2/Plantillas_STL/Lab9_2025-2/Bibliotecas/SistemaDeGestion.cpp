@@ -55,6 +55,13 @@ void SistemaDeGestion::cargaEtiquetas(const char *nombArch) {
         if (arch.eof()) break;
         etiquetas[temp.getCodigo()] = temp;
     }
+
+    // map de etiquetas
+    // pair<T1, T2> p;
+    // p.first;   // clave
+    // p.second;  // dato miembro
+    // etiqueta.first // la clave
+    // etiqueta.second // objeto Etiqueta
 }
 
 void SistemaDeGestion::cargaStreamers(const char *nombArch) {
@@ -73,6 +80,35 @@ void SistemaDeGestion::cargaStreamers(const char *nombArch) {
 }
 
 void SistemaDeGestion::completarStreamers() {
+    string codCat;
+    for (Streamer& streamer : streamers) {
+        // Actualizamos las categorias
+        codCat = streamer.getCategoria().getCodigo();
+        for (const Categoria& cat : categorias) {
+            if (codCat == cat.getCodigo()) {
+                streamer.setCategoria(cat);
+                break;
+            }
+        }
+        // Completamos las etiquetas
+        string str = streamer.getEtiquetaStr();
+        string auxEtiqueta;
+        for (int i = 0; i < str.length() ; i+=7) {
+            auxEtiqueta = str.substr(i,6);
+            auto it = etiquetas.find(auxEtiqueta);
+
+            if (it != etiquetas.end()) {
+                streamer.insertarEtiqueta(it->second);
+            }
+        }
+        // Ahora asignamos los comentarios
+        string canal = streamer.getCanal();
+        for (const Comentario& comentario : comentarios) {
+            if (comentario.getCanal() == canal) {
+                streamer.insertarComentario(comentario.getComentario());
+            }
+        }
+    }
 }
 
 void SistemaDeGestion::mostrarReporte(const char *nombArch) const {
@@ -81,7 +117,20 @@ void SistemaDeGestion::mostrarReporte(const char *nombArch) const {
         cout << "Error al abrir " << nombArch << endl;
         exit(1);
     }
+    arch << "========================================================\n";
+    arch << setw(36) << "RELACION STREAMERS" << endl;
+    for (const Streamer& streamer : streamers) {
+        arch << "--------------------------------------------------------\n";
+        arch << streamer;
+    }
+    arch << "========================================================\n";
 }
 
-void SistemaDeGestion::eliminaStreamers(const string &idioma) {
+void SistemaDeGestion::eliminaStreamers(const string&idioma) {
+    for (auto it = streamers.begin(); it != streamers.end(); ++it) {
+        if (it->getIdioma() == idioma) {
+            it = streamers.erase(it);
+            --it;
+        }
+    }
 }
