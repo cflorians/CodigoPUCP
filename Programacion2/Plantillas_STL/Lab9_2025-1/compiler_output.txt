@@ -1,0 +1,450 @@
+﻿g++.exe : In file included from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:65,
+En línea: 1 Carácter: 66
++ ...  $env:Path; & "D:\Apps\CLion 2026.1.1\bin\mingw\bin\g++.exe" -std=c++ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include.../stl_list.h:65,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list:65,
+                 from main.cpp:6:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h: In instantiation 
+of 'struct __gnu_cxx::__aligned_membuf<Infraccion>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:237:40:   required from 
+'struct std::_List_node<Infraccion>'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc:73:19:   required from 
+'void std::__cxx11::_List_base<_Tp, _Alloc>::_M_clear() [with _Tp = Infraccion; _Alloc = std::allocator<Infraccion>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:575:9:   required from 
+'std::__cxx11::_List_base<_Tp, _Alloc>::~_List_base() [with _Tp = Infraccion; _Alloc = std::allocator<Infraccion>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:749:7:   required from 
+here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:56:65: error: 
+invalid application of 'sizeof' to incomplete type 'Infraccion'
+   56 |       alignas(__alignof__(_Tp2::_M_t)) unsigned char _M_storage[sizeof(_Tp)];
+      |                                                                 ^~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h: In instantiation 
+of 'struct __gnu_cxx::__aligned_membuf<Empresa>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:237:40:   required from 
+'struct std::_List_node<Empresa>'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc:73:19:   required from 
+'void std::__cxx11::_List_base<_Tp, _Alloc>::_M_clear() [with _Tp = Empresa; _Alloc = std::allocator<Empresa>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:575:9:   required from 
+'std::__cxx11::_List_base<_Tp, _Alloc>::~_List_base() [with _Tp = Empresa; _Alloc = std::allocator<Empresa>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:749:7:   required from 
+here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:56:65: error: 
+invalid application of 'sizeof' to incomplete type 'Empresa'
+In file included from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:66,
+                 from Bibliotecas/MinisterioDeTransporte.cpp:5:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h: In instantiation of 
+'constexpr std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = Multa; _Alloc = std::allocator<Multa>]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:526:7:   required 
+from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:367:49: error: 
+invalid use of incomplete type 'class Multa'
+  367 |                       _M_impl._M_end_of_storage - _M_impl._M_start);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+In file included from Bibliotecas/MinisterioDeTransporte.cpp:11:
+Bibliotecas/Empresa.h:15:18: note: forward declaration of 'class Multa'
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+In file included from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h:64,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:51,
+                 from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h:40,
+                 from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h:41,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:44,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:40,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream:41,
+                 from Bibliotecas/MinisterioDeTransporte.cpp:1:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h: In instantiation of 
+'struct std::pair<const std::__cxx11::basic_string<char>, Vehiculo>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:56:65:   required 
+from 'struct __gnu_cxx::__aligned_membuf<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:231:41:   required from 
+'struct std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:1936:21:   required 
+from 'void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Link_type) [with _Key = 
+std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = 
+std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = 
+std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Link_type = std::_Rb_tree_node<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:986:9:   required from 
+'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::~_Rb_tree() [with _Key = std::__cxx11::basic_string<char>; 
+_Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = std::_Select1st<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = 
+std::allocator<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:195:7:   required from 
+here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:194:11: error: 
+'std::pair<_T1, _T2>::second' has incomplete type
+  194 |       _T2 second;                ///< The second member
+      |           ^~~~~~
+Bibliotecas/Empresa.h:14:23: note: forward declaration of 'class Vehiculo'
+   14 |     map<string, class Vehiculo> vehiculos;
+      |                       ^~~~~~~~
+In file included from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h:57,
+                 from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:41,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception:164,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:41:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits: In instantiation of 
+'struct std::__is_implicitly_default_constructible<Vehiculo>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:161:35:   required by 
+substitution of 'template<class ... _Bn> std::__detail::__first_t<std::integral_constant<bool, true>, typename 
+std::enable_if<(bool)(_Bn::value), void>::type ...> std::__detail::__and_fn(int) [with _Bn = 
+{std::__is_implicitly_default_constructible<const std::__cxx11::basic_string<char, std::char_traits<char>, 
+std::allocator<char> > >, std::__is_implicitly_default_constructible<Vehiculo>}]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:177:42:   required from 
+'struct std::__and_<std::__is_implicitly_default_constructible<const std::__cxx11::basic_string<char, 
+std::char_traits<char>, std::allocator<char> > >, std::__is_implicitly_default_constructible<Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:182:34:   required from 
+'struct std::__not_<std::__and_<std::__is_implicitly_default_constructible<const std::__cxx11::basic_string<char, 
+std::char_traits<char>, std::allocator<char> > >, std::__is_implicitly_default_constructible<Vehiculo> > >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:247:16:   required from 
+'struct std::pair<const std::__cxx11::basic_string<char>, Vehiculo>'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:56:65:   required 
+from 'struct __gnu_cxx::__aligned_membuf<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:231:41:   required from 
+'struct std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:1936:21:   required 
+from 'void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Link_type) [with _Key = 
+std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = 
+std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = 
+std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Link_type = std::_Rb_tree_node<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:986:9:   required from 
+'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::~_Rb_tree() [with _Key = std::__cxx11::basic_string<char>; 
+_Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = std::_Select1st<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = 
+std::allocator<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:195:7:   required from 
+here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:1040:25: error: invalid use 
+of incomplete type 'class Vehiculo' [-fpermissive]
+ 1040 |       = __bool_constant<__is_constructible(_Tp, _Args...)>;
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:14:23: note: forward declaration of 'class Vehiculo'
+   14 |     map<string, class Vehiculo> vehiculos;
+      |                       ^~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits: In instantiation of 
+'constexpr const bool std::is_convertible_v<const Vehiculo&, Vehiculo>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:281:13:   required from 
+'static constexpr bool std::pair<_T1, _T2>::_S_convertible() [with _U1 = const std::__cxx11::basic_string<char>&; _U2 
+= const Vehiculo&; _T1 = const std::__cxx11::basic_string<char>; _T2 = Vehiculo]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h:304:65:   required from 
+'struct std::pair<const std::__cxx11::basic_string<char>, Vehiculo>'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h:56:65:   required 
+from 'struct __gnu_cxx::__aligned_membuf<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:231:41:   required from 
+'struct std::_Rb_tree_node<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:1936:21:   required 
+from 'void std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_erase(_Link_type) [with _Key = 
+std::__cxx11::basic_string<char>; _Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = 
+std::_Select1st<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = 
+std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Link_type = std::_Rb_tree_node<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h:986:9:   required from 
+'std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::~_Rb_tree() [with _Key = std::__cxx11::basic_string<char>; 
+_Val = std::pair<const std::__cxx11::basic_string<char>, Vehiculo>; _KeyOfValue = std::_Select1st<std::pair<const 
+std::__cxx11::basic_string<char>, Vehiculo> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = 
+std::allocator<std::pair<const std::__cxx11::basic_string<char>, Vehiculo> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:195:7:   required from 
+here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:3363:44: error: invalid use 
+of incomplete type 'class Vehiculo' [-fpermissive]
+ 3363 |   inline constexpr bool is_convertible_v = __is_convertible(_From, _To);
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:14:23: note: forward declaration of 'class Vehiculo'
+   14 |     map<string, class Vehiculo> vehiculos;
+      |                       ^~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits: In instantiation of 
+'struct std::is_destructible<Multa>':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:188:51:   required 
+from 'constexpr void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = Multa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:947:15:   required 
+from 'constexpr void std::_Destroy(_ForwardIterator, _ForwardIterator, allocator<_T2>&) [with _ForwardIterator = 
+Multa*; _Tp = Multa]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:730:15:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::~vector() [with _Tp = Multa; _Alloc = std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:979:52: error: static 
+assertion failed: template argument must be a complete class or an unbounded array
+  979 |       static_assert(std::__is_complete_or_unbounded(__type_identity<_Tp>{}),
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:979:52: note: 
+'std::__is_complete_or_unbounded<__type_identity<Multa> >((std::__type_identity<Multa>(), 
+std::__type_identity<Multa>()))' evaluates to false
+In file included from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h:57,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:42:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h: In instantiation 
+of 'constexpr void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = Multa*]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:947:15:   required 
+from 'constexpr void std::_Destroy(_ForwardIterator, _ForwardIterator, allocator<_T2>&) [with _ForwardIterator = 
+Multa*; _Tp = Multa]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:730:15:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::~vector() [with _Tp = Multa; _Alloc = std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:188:51: error: 
+static assertion failed: value type is destructible
+  188 |       static_assert(is_destructible<_Value_type>::value,
+      |                                                   ^~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:188:51: note: 
+'std::integral_constant<bool, false>::value' evaluates to false
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:195:25: error: 
+invalid use of incomplete type 'using std::iterator_traits<Multa*>::value_type = std::remove_cv_t<Multa>' {aka 'class 
+Multa'} [-fpermissive]
+  195 |       std::_Destroy_aux<__has_trivial_destructor(_Value_type)>::
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:15:18: note: forward declaration of 'using std::iterator_traits<Multa*>::value_type = 
+std::remove_cv_t<Multa>' {aka 'class Multa'}
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+In file included from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:33,
+                 from D:/Apps/CLion 
+2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h:46,
+                 from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:43:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h: In instantiation 
+of 'void std::__new_allocator<_Tp>::deallocate(_Tp*, size_type) [with _Tp = Multa; size_type = long long unsigned 
+int]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h:210:35:   required 
+from 'constexpr void std::allocator< <template-parameter-1-1> >::deallocate(_Tp*, std::size_t) [with _Tp = Multa; 
+std::size_t = long long unsigned int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:516:23:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::deallocate(allocator_type&, pointer, 
+size_type) [with _Tp = Multa; allocator_type = std::allocator<Multa>; pointer = Multa*; size_type = long long unsigned 
+int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:387:19:   required 
+from 'constexpr void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(pointer, std::size_t) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>; pointer = Multa*; std::size_t = long long unsigned int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:366:2:   required 
+from 'constexpr std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = Multa; _Alloc = std::allocator<Multa>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:526:7:   required 
+from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h:161:13: error: 
+invalid application of '__alignof__' to incomplete type 'Multa'
+  161 |         if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+      |             ^~~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h:163:38: error: 
+invalid application of 'sizeof' to incomplete type 'Multa'
+  163 |             _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n),
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h:164:55: error: 
+invalid application of '__alignof__' to incomplete type 'Multa'
+  164 |                                      std::align_val_t(alignof(_Tp)));
+      |                                                       ^~~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h:168:34: error: 
+invalid application of 'sizeof' to incomplete type 'Multa'
+  168 |         _GLIBCXX_OPERATOR_DELETE(_GLIBCXX_SIZED_DEALLOC(__p, __n));
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h: In instantiation of 
+'constexpr std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>; size_type = long long unsigned int]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:597:19:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:988:50: error: 
+invalid use of incomplete type 'class Multa'
+  988 |       { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:15:18: note: forward declaration of 'class Multa'
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h: In instantiation of 
+'constexpr void std::_Vector_base<_Tp, _Alloc>::_M_create_storage(std::size_t) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>; std::size_t = long long unsigned int]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:332:9:   required 
+from 'constexpr std::_Vector_base<_Tp, _Alloc>::_Vector_base(std::size_t, const allocator_type&) [with _Tp = Multa; 
+_Alloc = std::allocator<Multa>; std::size_t = long long unsigned int; allocator_type = std::allocator<Multa>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:598:61:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:397:66: error: 
+invalid use of incomplete type 'class Multa'
+  397 |         this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Bibliotecas/Empresa.h:15:18: note: forward declaration of 'class Multa'
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+In file included from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:65:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h: In 
+instantiation of 'constexpr _ForwardIterator std::__do_uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) 
+[with _InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; _ForwardIterator = Multa*]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:371:30:   
+required from 'constexpr _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, 
+_ForwardIterator, allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; 
+_ForwardIterator = Multa*; _Tp = Multa]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:601:31:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:119:56: error: 
+cannot increment a pointer to incomplete type 'Multa'
+  119 |           for (; __first != __last; ++__first, (void)++__cur)
+      |                                                        ^~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h: In 
+instantiation of '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with 
+_InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; _ForwardIterator = Multa*]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:373:37:   
+required from 'constexpr _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, 
+_ForwardIterator, allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; 
+_ForwardIterator = Multa*; _Tp = Multa]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:601:31:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:174:34: error: 
+invalid use of incomplete type '_ValueType1' {aka 'class Multa'} [-fpermissive]
+  174 |       const bool __can_memmove = __is_trivial(_ValueType1);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:15:18: note: forward declaration of '_ValueType1' {aka 'class Multa'}
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:182:11: error: 
+invalid use of incomplete type '_ValueType2' {aka 'class Multa'} [-fpermissive]
+  182 |         = _GLIBCXX_USE_ASSIGN_FOR_INIT(_ValueType2, _From);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bibliotecas/Empresa.h:15:18: note: forward declaration of '_ValueType2' {aka 'class Multa'}
+   15 |     vector<class Multa> multasRecibidas;
+      |                  ^~~~~
+In file included from D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string:48:
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h: In instantiation 
+of 'constexpr __gnu_cxx::__normal_iterator<_Iterator, _Container>& __gnu_cxx::__normal_iterator<_Iterator, 
+_Container>::operator++() [with _Iterator = const Multa*; _Container = std::vector<Multa>]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:119:30:   
+required from 'constexpr _ForwardIterator std::__do_uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) 
+[with _InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; _ForwardIterator = Multa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h:371:30:   
+required from 'constexpr _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, 
+_ForwardIterator, allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const Multa*, vector<Multa> >; 
+_ForwardIterator = Multa*; _Tp = Multa]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:601:31:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:1111:11: error: 
+cannot increment a pointer to incomplete type 'const Multa'
+ 1111 |         ++_M_current;
+      |           ^~~~~~~~~~
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h: In instantiation of 
+'constexpr _Tp* std::allocator< <template-parameter-1-1> >::allocate(std::size_t) [with _Tp = Multa; std::size_t = 
+long long unsigned int]':
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:482:28:   required 
+from 'static constexpr _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(allocator_type&, size_type) [with 
+_Tp = Multa; pointer = Multa*; allocator_type = std::allocator<Multa>; size_type = long long unsigned int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:378:33:   required 
+from 'constexpr std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with 
+_Tp = Multa; _Alloc = std::allocator<Multa>; pointer = Multa*; std::size_t = long long unsigned int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:395:33:   required 
+from 'constexpr void std::_Vector_base<_Tp, _Alloc>::_M_create_storage(std::size_t) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>; std::size_t = long long unsigned int]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:332:9:   required 
+from 'constexpr std::_Vector_base<_Tp, _Alloc>::_Vector_base(std::size_t, const allocator_type&) [with _Tp = Multa; 
+_Alloc = std::allocator<Multa>; std::size_t = long long unsigned int; allocator_type = std::allocator<Multa>]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:598:61:   required 
+from 'constexpr std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = Multa; _Alloc = 
+std::allocator<Multa>]'
+Bibliotecas/Empresa.h:9:7:   required from 'constexpr decltype (::new(void*(0)) _Tp) std::construct_at(_Tp*, _Args&& 
+...) [with _Tp = Empresa; _Args = {const Empresa&}; decltype (::new(void*(0)) _Tp) = Empresa*]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:539:21:   required 
+from 'static constexpr void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& 
+...) [with _Up = Empresa; _Args = {const Empresa&}; _Tp = std::_List_node<Empresa>; allocator_type = 
+std::allocator<std::_List_node<Empresa> >]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:713:33:   required from 
+'std::__cxx11::list<_Tp, _Alloc>::_Node* std::__cxx11::list<_Tp, _Alloc>::_M_create_node(_Args&& ...) [with _Args = 
+{const Empresa&}; _Tp = Empresa; _Alloc = std::allocator<Empresa>; _Node = std::__cxx11::list<Empresa>::_Node]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:2005:32:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::_M_insert(iterator, _Args&& ...) [with _Args = {const Empresa&}; _Tp = 
+Empresa; _Alloc = std::allocator<Empresa>; iterator = std::__cxx11::list<Empresa>::iterator]'
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:1306:24:   required 
+from 'void std::__cxx11::list<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Empresa; _Alloc = 
+std::allocator<Empresa>; value_type = Empresa]'
+Bibliotecas/MinisterioDeTransporte.cpp:42:32:   required from here
+D:/Apps/CLion 2026.1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h:193:45: error: invalid 
+application of 'sizeof' to incomplete type 'Multa'
+  193 |             if (__builtin_mul_overflow(__n, sizeof(_Tp), &__n))
+      |                                             ^~~~~~~~~~~
