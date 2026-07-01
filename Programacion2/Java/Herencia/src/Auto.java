@@ -1,22 +1,17 @@
-public class Auto {
+public abstract class Auto {
     // atributos
     private String marca;
     private String modelo;
     private int velocidad;
 
-    // Constructor
+    // Metodos
 
-    public Auto() {
-        this.velocidad = 0;
-    }
 
     public Auto(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
         this.velocidad = 0;
     }
-
-    // Metodos
 
     public String getMarca() {
         return marca;
@@ -42,7 +37,7 @@ public class Auto {
         this.velocidad = velocidad;
     }
 
-    public void impirmir(){
+    public void imprimir(){
         System.out.println("Auto{" +
                 "marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
@@ -58,4 +53,6 @@ public class Auto {
                 ", velocidad=" + velocidad +
                 '}';
     }
+
+    public abstract void tipoCombustible();
 }
