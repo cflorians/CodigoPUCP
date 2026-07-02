@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Usuario {
@@ -10,8 +11,14 @@ public class Usuario {
     private long telefono;
     private String correo;
     private String especialidad;
+    private final ArrayList<Suscripcion> suscripciones;
+
+    public ArrayList<Suscripcion> getSuscripciones() {
+        return suscripciones;
+    }
 
     public Usuario(){
+        this.suscripciones = new ArrayList<>();
     }
 
     public int getId() {
@@ -86,18 +93,25 @@ public class Usuario {
         return true;
     }
 
+    public double calcularCosto(){
+        double costo = 0.0;
+        for (Suscripcion sub : suscripciones){
+            costo += sub.calcularPrecio();
+        }
+        return costo;
+    }
+
     @Override
     public String toString() {
-        return "Usuario{" +
-                "id=" + id +
-                ", nombreCompleto='" + nombreCompleto + '\'' +
-                ", dni=" + dni +
-                ", edad=" + edad +
-                ", ciudad='" + ciudad + '\'' +
-                ", fechaNacimiento='" + fechaNacimiento + '\'' +
-                ", telefono=" + telefono +
-                ", correo='" + correo + '\'' +
-                ", especialidad='" + especialidad + '\'' +
-                '}';
+        return String.format("%-4s %-20s %-12s %-12s %-12s %-12s %-12s %-22s %-20s",
+                id, nombreCompleto, dni, edad, ciudad, fechaNacimiento, telefono, correo, especialidad);
+    }
+
+    public void imprimir(){
+        System.out.println(this);
+        System.out.println("     Suscripciones: ");
+        for (Suscripcion sub : suscripciones){
+            // falta impresion de suscripciones
+        }
     }
 }
