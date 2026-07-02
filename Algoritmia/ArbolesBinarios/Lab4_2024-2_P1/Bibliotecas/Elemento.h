@@ -7,7 +7,6 @@
 
 struct Elemento {
     char letra;
-    bool impreso = false;
 };
 
 #endif //LAB4_2024_2_ELEMENTO_H

@@ -4,50 +4,20 @@ using namespace std;
 #include "Bibliotecas/Arbol.h"
 #include "Bibliotecas/Funciones.h"
 
-void muestraPalabras(Arbol& arbol, Nodo*& nodo) {
-    // si no tiene hijos
+void muestraPalabras(Nodo* nodo, char* buffer, int profundidad) {
+    if (nodo == nullptr) return;
+
+    // colocamos e una posicion de un buffer la letra en especifico mientras bajamos de nivel
+    buffer[profundidad] = nodo->elemento.letra;
+
     if (nodo->izq == nullptr and nodo->der == nullptr) {
-        // imprimimos, mostramos el cambio de linea y regresamos
-        cout << nodo->elemento.letra << endl;
+        buffer[profundidad+1] = '\0'; // colocamos el fin de linea
+        cout << buffer << endl;
         return;
     }
 
-    if (nodo->izq->elemento.impreso and nodo->der->elemento.impreso) {
-        return;
-    }
-    else {
-        cout << nodo->elemento.letra;
-    }
-
-    // si tiene 2 hijos
-    if (nodo->izq != nullptr and nodo->der != nullptr) {
-        // hay 2 casos, si no esta impreso izq, si esta impreso izq y si esta impreso der
-        if (nodo->izq->elemento.impreso) {
-            // si es que esta impreso el lado izquierdo, imprimimos el lado derecho
-            muestraPalabras(arbol, nodo->der);
-            // marcamos el nodo derecho como impreso y el nodo raiz tambien
-            nodo->elemento.impreso = true;
-            nodo->der->elemento.impreso = true;
-            // ya marcados los impresos
-            muestraPalabras(arbol, arbol.raiz);
-        }
-        else {
-            // si la izquierda no esta impresa, vamos por ese camino
-            muestraPalabras(arbol, nodo->izq);
-            // ahora marcamos que ya se imprimio la izq
-            nodo->izq->elemento.impreso = true;
-            // como ya marcamos, reiniciamos la impresion a la raiz
-            muestraPalabras(arbol, arbol.raiz);
-        }
-    }
-    else if (nodo->izq == nullptr) {
-        // si el nodo izquierdo es el que no existe avanzamos a la derecha
-        muestraPalabras(arbol, nodo->der);
-    }
-    else {
-        // caso contrario avanzamos a la izq
-        muestraPalabras(arbol, nodo->izq);
-    }
+    muestraPalabras(nodo->izq, buffer, profundidad+1);
+    muestraPalabras(nodo->der, buffer, profundidad+1);
 }
 
 int main() {
@@ -104,7 +74,8 @@ int main() {
     // subimos un ultimo nivel
     plantar(arbol, {'B'}, arbol17.raiz, arbol18.raiz);
 
-    muestraPalabras(arbol, arbol.raiz);
+    char buffer[50];
+    muestraPalabras(arbol.raiz, buffer, 0);
 
     return 0;
 }

@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 4.2)
-project(Lab4_2024_2)
+project(Lab4_2024_2_P2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Lab4_2024_2 main.cpp
+add_executable(Lab4_2024_2_P2 main.cpp
         Bibliotecas/Elemento.h
         Bibliotecas/Nodo.h
         Bibliotecas/Arbol.h
         Bibliotecas/Funciones.cpp
-        Bibliotecas/Funciones.h)
+        Bibliotecas/Funciones.h
+        Bibliotecas/Pila.h
+)
