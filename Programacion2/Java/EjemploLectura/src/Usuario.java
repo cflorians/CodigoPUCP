@@ -85,4 +85,19 @@ public class Usuario {
 
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombreCompleto='" + nombreCompleto + '\'' +
+                ", dni=" + dni +
+                ", edad=" + edad +
+                ", ciudad='" + ciudad + '\'' +
+                ", fechaNacimiento='" + fechaNacimiento + '\'' +
+                ", telefono=" + telefono +
+                ", correo='" + correo + '\'' +
+                ", especialidad='" + especialidad + '\'' +
+                '}';
+    }
 }

@@ -7,5 +7,6 @@ public class Principal {
         Veterinaria plataforma = new Veterinaria("datos.txt");
 
         plataforma.cargarDatos();
+        plataforma.imprimirReporte();
     }
 }

@@ -25,4 +25,11 @@ public class Veterinaria {
             usuarios.add(usuario);
         }
     }
+
+    public void imprimirReporte(){
+        System.out.println("=".repeat(90));
+        for (Usuario usuario : usuarios){
+            System.out.println(usuario);
+        }
+    }
 }
