@@ -6,14 +6,12 @@
 # puedes descomentar las siguientes lineas:
 # !.idea/codeStyles/
 # !.idea/dictionaries/
-
 # Quitar archivos de usuario especificos (diseño de pestañas, tareas locales, etc.)
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionary.xml
 .idea/**/shelf/
-
 # Archivos de cmake-build creados por CLion
 cmake-build-*/
 
@@ -40,18 +38,30 @@ compile_commands.json
 *.lib
 *.so
 *.dylib
-
 # Ejecutables finales
 *.exe
 *.out
 *.app
-
 # Archivos de depuracion (Debug symbols)
 *.pdb
 *.dSYM/
+
+# ==========================================
+# Logisim / Logisim Evolution
+# ==========================================
+# Backups automaticos que crea al guardar
+*.circ.bak
+*.circ~
 
 # ==========================================
 # Temporales del Sistema Operativo
 # ==========================================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# ==========================================
+# Editores
+# ==========================================
+.vscode/
+*.swp
