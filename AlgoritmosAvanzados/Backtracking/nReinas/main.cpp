@@ -17,7 +17,7 @@ void initBoard(char board[N][N]) {
 void printBoard(char board[N][N]) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            cout << board[i][j] << (j==N-1 ? '\n' : ' ');
+            cout << board[i][j] << (j==N-1 ? "\n" : "  ");
         }
     }
     cout << endl;
@@ -41,7 +41,7 @@ bool valid(int currentRow, int currentCol, char board[N][N]) {
 
 void solve(int currentCol, char board[N][N]) {
     // BASE CASE
-    // si encontramos una solucion invalida, regresamos
+    // si llegamos al final imprimimos y retornamos
     static int solutions = 1;
     if (currentCol == N) {
         cout << "Solution " << solutions++ << " FOUND!" << endl;
