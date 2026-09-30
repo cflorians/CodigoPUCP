@@ -10,28 +10,28 @@ Guarda R0 en la RAM
 Carga 26 en R0
 Guarda R0 en la RAM
 ## Pseudo-assambly
-LOAD R7, 1
-LOAD R6, 4
-LSL R6
-LSL R6
-LSL R6
-LSL R6
-LSL R6
-LOAD R0, 4
-LSL R0
-SUM R1, R0
-SUM R1, R7
-LSL R0
-LSL R0
-LOAD R4, 5
-SUM R0, R4
-SUM R3, R6
-WRITE [R3], R0
-SUM R3, R7
-WRITE [R3], R1
-SUM R3, R7
-SUM R0, R7
-WRITE [R3], R0
+LOAD R7, 1  
+LOAD R6, 4  
+LSL R6  
+LSL R6  
+LSL R6  
+LSL R6  
+LSL R6  
+LOAD R0, 4  
+LSL R0  
+SUM R1, R0  
+SUM R1, R7  
+LSL R0  
+LSL R0  
+LOAD R4, 5  
+SUM R0, R4  
+SUM R3, R6  
+WRITE [R3], R0  
+SUM R3, R7  
+WRITE [R3], R1  
+SUM R3, R7  
+SUM R0, R7  
+WRITE [R3], R0  
 
 # Fibonacci
 **Objetivo**: Generar todos los terminos de 8 bits de la serie de fibonacci en cierto espacio de memoria usando una subrutina
@@ -62,63 +62,63 @@ fib{
 	return
 }
 ## Pseudo-assambly
-LOAD R1, 1
-LOAD R2, 7
-LOAD R3, 4
-LSL R3
-LSL R3
-LSL R3
-LSL R3
-LSL R3
-NOT R7
-LOAD R6, 4
-LSL R6
-LSL R6
-LSL R6
-LOAD R5, 4
-SUM R6, R5
-LOAD R5, 1
-LOAD R4, 3
-NOT R4
-SUM R4, R5
-CALL R6
-SUM R2, R7
-SRZ R2
-JUMPR R4
-LOAD R4, 0
-JUMPR R4
+LOAD R1, 1  
+LOAD R2, 7  
+LOAD R3, 4  
+LSL R3  
+LSL R3  
+LSL R3  
+LSL R3  
+LSL R3  
+NOT R7  
+LOAD R6, 4  
+LSL R6  
+LSL R6  
+LSL R6  
+LOAD R5, 4  
+SUM R6, R5  
+LOAD R5, 1  
+LOAD R4, 3  
+NOT R4  
+SUM R4, R5  
+CALL R6  
+SUM R2, R7  
+SRZ R2  
+JUMPR R4  
+LOAD R4, 0  
+JUMPR R4  
 
-WRITE [R3], R0
-SUM R3, R5
-SUM R0, R1
-WRITE [R3], R1
-SUM R3, R5
-SUM R1, R0
-RET
+WRITE [R3], R0  
+SUM R3, R5  
+SUM R0, R1  
+WRITE [R3], R1  
+SUM R3, R5  
+SUM R1, R0  
+RET  
 
 # Promedio 4 notas
 ## Assambly
-LOAD R5, 1
-LOAD R6, 4
-LSL R6
-LSL R6
-LSL R6
-SUM R4, R6
-LSL R6
-LSL R6
-READ R0, [R6]
-SUM R6, R5
-READ R1, [R6]
-SUM R6, R5
-READ R2, [R6]
-SUM R6, R5
-READ R3, [R6]
-CALL R4
-JUMPR
+LOAD R5, 1  
+LOAD R6, 4  
+LSL R6  
+LSL R6  
+LSL R6  
+SUM R4, R6  
+LSL R6  
+LSL R6  
+READ R0, [R6]  
+SUM R6, R5  
+READ R1, [R6]  
+SUM R6, R5  
+READ R2, [R6]  
+SUM R6, R5  
+READ R3, [R6]  
+CALL R4  
+JUMPR  
 
-SUM R0, R1
-SUM R0, R2
-SUM R0, R3
-LSR R0
-LSR R0
-RET
+SUM R0, R1  
+SUM R0, R2  
+SUM R0, R3  
+LSR R0  
+LSR R0  
+RET  
