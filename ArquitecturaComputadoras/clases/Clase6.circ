@@ -8514,7 +8514,7 @@ a3 43 43 c7 e1 43 a3 16
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Compu_4_2"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="32.0"/>
+    <a name="simulationFrequency" val="16000.0"/>
     <comp lib="0" loc="(1000,640)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="fetch_decode"/>
