@@ -1,4 +1,4 @@
-# Repositorio de los cursos que incluyen código de Ingeniería Informatica
+# Cursos de código
 ## EEGGCC
 * **Fundamentos de programación (FunPro)**
 * **Técnicas de programación (TP)**
