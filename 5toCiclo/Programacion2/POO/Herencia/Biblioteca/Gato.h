@@ -1,0 +1,25 @@
+//
+// Created by Carlos on 5/27/2026.
+//
+
+#ifndef HERENCIA_GATO_H
+#define HERENCIA_GATO_H
+#include "Animal.h"
+
+class Gato : public Animal {
+private:
+    bool dentroCasa;
+public:
+    Gato();
+    Gato(const char* nomb, int ed, double pe, bool dentroCasa);
+    ~Gato();
+
+    void setDentroCasa(bool dentro);
+    bool getDentroCasa() const;
+
+    void mostrar();
+
+    void comer();
+};
+
+#endif //HERENCIA_GATO_H

@@ -1,0 +1,4 @@
+1 Ana_Paredes 74581236 28 Lima 1997-03-14 987654321 ana@gmail.com Ingenieria_Sistemas
+2 Luis_Rojas 81245960 32 Arequipa 1993-07-22 953214876 lrojas@gmail.com Administrador
+3 Marta_Salas 70125648 27 Cusco 1998-01-05 981234567 martasalas@gmail.com Contadora
+FIN

@@ -1,0 +1,11 @@
+
+#ifndef ESTRUCTURAS_CON_CHAR_DINAMICOS_ESTRUCTURAS_H
+#define ESTRUCTURAS_CON_CHAR_DINAMICOS_ESTRUCTURAS_H
+
+struct Persona {
+    int dni;
+    char *nombre;
+    double sueldo;
+};
+
+#endif //ESTRUCTURAS_CON_CHAR_DINAMICOS_ESTRUCTURAS_H
