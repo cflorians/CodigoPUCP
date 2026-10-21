@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28BB83F1-23A0-7BF6-9DFE-0BEFF1494228" name="PRODUCTOS">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>688B5B72-AF4B-78E9-5057-B5E664B1007C</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCTO_ID" id="1B547291-2AF0-866B-C856-1B2171E2565B">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>72CDF936-C332-5357-09F5-72BDD5527A09</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="4F58AEB5-4385-C989-02F4-F4F008EF66CE">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>65FF2DB0-CC1C-B991-D32B-E7A51536E738</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E9506E5-4EF2-A992-E235-73F14AA795AF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="D19B0CC9-9966-670F-C063-0C73296BDE77">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>30C4290B-D29B-BF4F-D2E8-40000F40CF2E</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2584FBED-7B9A-4786-6D7E-A8D047BAA3FA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0055C735-C3A8-78F6-FD06-3844643E2F9E" name="PK_PRODUCTOS">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>9FFCE9AF-0D1D-3B7D-E6C6-F623E2F80878</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1B547291-2AF0-866B-C856-1B2171E2565B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

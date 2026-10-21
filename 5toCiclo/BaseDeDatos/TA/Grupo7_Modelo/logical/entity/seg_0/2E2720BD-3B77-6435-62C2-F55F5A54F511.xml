@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E2720BD-3B77-6435-62C2-F55F5A54F511" name="KYC">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>263CA7E5-4177-8F3C-78F2-D8BD3A0D93AE</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="KYC_ID" id="1625740C-A4DC-F05B-47D6-48F541EFC89B">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>308FD627-FEAA-C6B6-1EE6-E3D5C68113AB</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLIENTE_ID" id="E87562B7-85C1-942E-638E-0A38B24D9CE8">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>1F917669-1DEA-7A61-728F-A32158902D57</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<referedAttribute>87F32817-605C-22E6-6155-BBD57121B2C0</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_VERIFICACION" id="B565B6D3-5BA2-5AF6-017C-1DF99B2ABEC1">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>CA16E25F-DE93-EFC0-3239-756501DA157F</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A9254652-4E41-DF46-6DE8-33FBE35BA007</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORIGEN_FONDOS" id="B359B884-BDB6-6A42-8A78-8D91E7B77071">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>6461AB5C-F367-FAC0-FC2D-FB0399BBC10A</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>13C2703C-FD9A-5F7A-9426-1B2A10430448</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ES_PEP" id="88164C10-F8F0-DBD7-BC2F-9B6C166E4F00">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>77147509-F60A-F7F5-3FF0-B2CA1DCBC7A5</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1EE9B80A-EA9B-9661-BF80-7DF0B7D416D7</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NIVEL_RIESGO" id="8A91F10D-8319-3778-D1EC-E436E025CA44">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>4861AE2F-710A-9B2F-F0BD-174F111E9C22</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FA6B785E-E667-99C3-FCDA-DD9B312D904D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESULTADO" id="CE4C6EBB-6401-BDC2-F4FC-541C79A26D66">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>FAA8E6A8-61AB-29B6-714D-4BB0E17E21E9</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FA6B785E-E667-99C3-FCDA-DD9B312D904D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBSERVACION" id="4673220C-D9F1-10B7-F368-DAAACC70CB62">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>C9DDAA4D-0B21-8640-78A8-1D25B9F16235</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2584FBED-7B9A-4786-6D7E-A8D047BAA3FA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E54AC77F-CA12-085B-57AB-482B873754C6" name="PK_KYC">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>775C0F9B-05DA-0F78-F0AB-4115712ADE95</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1625740C-A4DC-F05B-47D6-48F541EFC89B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

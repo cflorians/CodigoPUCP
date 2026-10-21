@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CRE_TIPOS_SEGURO" directorySegmentName="seg_0" id="B05F617D-C6E3-5A68-F01E-D2BF476D582C">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIPO_SEGURO_ID" id="032AB982-88D9-FF44-32EA-6DBCB2063FC9">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="046249C7-8ABF-9BEB-FC10-97890E30C0C8">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="6756BE1F-96D8-0F3F-D1B3-C7E23C360312">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TIPOS_SEGURO" id="04FA0682-4114-B016-707E-96E869D5A0BF">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_TIPOS_SEGURO_NOMBRE" id="656E3FEF-3F61-10CD-F278-091A8D72D9CC">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

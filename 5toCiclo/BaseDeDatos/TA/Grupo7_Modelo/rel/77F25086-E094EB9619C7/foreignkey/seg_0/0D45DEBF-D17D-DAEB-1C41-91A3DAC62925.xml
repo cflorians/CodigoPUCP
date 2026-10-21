@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0D45DEBF-D17D-DAEB-1C41-91A3DAC62925" containerWithKeyObject="EE75A2FB-E412-75C1-8523-B511F51E8C75" localFKIndex="4DE593C2-C63C-E653-7CDD-28CC772830F8" name="FK_SIMULACIONES_TIPOS_SEGURO">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>89559215-7C1D-06EB-EB47-1835FBEA0B2D</importedID>
+<referredTableLongName>CRE_TIPOS_SEGURO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B05F617D-C6E3-5A68-F01E-D2BF476D582C</referredTableID>
+<keyObject>04FA0682-4114-B016-707E-96E869D5A0BF</keyObject>
+<referredKeyID>04FA0682-4114-B016-707E-96E869D5A0BF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TIPO_SEGURO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

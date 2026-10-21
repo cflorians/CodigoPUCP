@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F85E44B-3B1C-E021-D77E-71D18709C389" name="TIPOS_SEGURO">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>B05F617D-C6E3-5A68-F01E-D2BF476D582C</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TIPO_SEGURO_ID" id="A53A3FCE-C494-332E-37A9-FDC4F6B1A895">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>032AB982-88D9-FF44-32EA-6DBCB2063FC9</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="AF19396E-03AC-1D58-F385-62F146938CFB">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>6756BE1F-96D8-0F3F-D1B3-C7E23C360312</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0E9506E5-4EF2-A992-E235-73F14AA795AF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="C9647853-3E52-8778-5232-3FDED4B29B27">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>046249C7-8ABF-9BEB-FC10-97890E30C0C8</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2584FBED-7B9A-4786-6D7E-A8D047BAA3FA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4254266-5BF3-C657-88EB-1759D1ABEF58" name="PK_TIPOS_SEGURO">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>04FA0682-4114-B016-707E-96E869D5A0BF</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A53A3FCE-C494-332E-37A9-FDC4F6B1A895</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

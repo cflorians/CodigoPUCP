@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6283B3A-9968-45EF-AAEA-AF56B89E7648" name="CRE_DESEMBOLSOS">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>C6DE906F-DDB3-0515-D5FD-6D812D958602</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DESEMBOLSO_ID" id="0A9C084E-7071-969F-B1D8-DC4DDC1FE1B1">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>54C9E33F-F314-49A2-379C-26FB58B7F285</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOLICITUD_ID" id="C48931D7-9280-E838-47F3-72D20BEBF91A">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>0E562A0F-B6AA-11A8-4BA4-965C9FD0A34D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="283FC923-1D46-05DC-38B0-7B951CF25E1B" referredColumn="278CDF17-E085-6396-698F-2733C47D7679"/>
+</associations>
+</Column>
+<Column name="NUMERO_OPERACION" id="003C1012-14C4-8C03-5D21-DB92D885037C">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>36F8155F-CCEA-59E5-8083-1C6F17885045</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>06CA1D22-E6F5-F8F3-E241-409C416C09DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO" id="F5C8EE34-5FB1-4B7B-E217-3006C88BA231">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>0F61D3CD-3893-CD0F-E17C-C27FAA7A9F03</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4C4B5B9C-E1B1-0ACE-AAF7-1FA2FB7DB009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_HORA" id="8851C239-BEB6-3C67-E1D5-D018A8610CA0">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>06089E1B-3276-0B0C-0C00-4A4DC6B10084</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A9254652-4E41-DF46-6DE8-33FBE35BA007</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="078E247F-D88D-46FE-DE9C-BC1B6F1B59D3" name="PK_DESEMBOLSOS">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>874A0271-43D1-FDD9-68BE-656BB81F6234</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A9C084E-7071-969F-B1D8-DC4DDC1FE1B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F9791B2-129E-D95C-89EB-7BB1622C7CA5" name="UQ_DESEMBOLSOS_SOLICITUD">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>34E8071C-1302-4DBC-BF54-495047C36EA3</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C48931D7-9280-E838-47F3-72D20BEBF91A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="416DEEC9-B228-4C91-781C-A72476C30C0C" name="UQ_DESEMBOLSOS_OPERACION">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>216C4B40-7CB4-AE14-6E07-A0376EC70C66</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="003C1012-14C4-8C03-5D21-DB92D885037C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA7CF0C9-CDA9-C794-E37A-41D922516B21" name="FK_DESEMBOLSOS_SOLICITUDES">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C48931D7-9280-E838-47F3-72D20BEBF91A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_DESEMBOLSOS_MONTO_POSITIVO" directorySegmentName="seg_0" id="3759C9E8-1E49-852C-E7E6-D08EFCDEDCED">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>2E81669F-BBB3-8353-0BED-CC7F1C7CA999</importedID>
+<rule><![CDATA[MONTO > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

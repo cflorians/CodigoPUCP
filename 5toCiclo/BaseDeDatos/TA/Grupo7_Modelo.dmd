@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Grupo7_Modelo" id="CB64BDCB-898B-0958-10F4-C50DFCFD27AC" version="3.5">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:23:45 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CB64BDCB-898B-0958-10F4-C50DFCFD27AC</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="18FCC30A-E672-AE15-6109-58A196726279">
+<designStoragePath>D:\Grupo07_Modelo_Logico</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

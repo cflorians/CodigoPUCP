@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="228BEDB4-8219-B9D9-65A0-B15C408B5598" containerWithKeyObject="ADC6BAD0-682C-4501-FC08-415DF1B8539B" localFKIndex="14084441-F4AE-D522-2150-2D00C9242089" name="FK_DOCUMENTOS_EXCEPCIONES">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>DA946951-F9DF-C1D9-9F66-7B5D44C83BBC</importedID>
+<referredTableLongName>CRE_EXCEPCIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A6E9DAF-C4D7-675F-15D4-2AFBB4ED9F34</referredTableID>
+<keyObject>EBCEC454-60AE-4E7E-BEC3-E80A65070B19</keyObject>
+<referredKeyID>EBCEC454-60AE-4E7E-BEC3-E80A65070B19</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>EXCEPCION_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

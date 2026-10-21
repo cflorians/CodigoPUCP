@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA432A79-B7C8-1FD0-43AD-658C0761025D" name="EVALUACIONES">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>C8DD94C9-9D1D-BDA4-B856-638661054BD8</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EVALUACION_ID" id="E347BB91-A257-C7F7-CA4C-225C0DD60487">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>5AF389BF-AEE4-4722-35BC-28055F02C6E9</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SOLICITUD_ID" id="C04B36A3-5706-48A8-10E6-F9E2DBF5572C">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>67E80297-A7B6-F387-F8E0-9EFABCB5A5A7</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<referedAttribute>AFC04EF4-32FB-4F8F-768B-BDD5C571A9CB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_HORA" id="0E538493-AE6E-7738-C2A2-2EBE1E69042B">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>B93310B6-7070-0BFD-7C8A-ACDF6689E557</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A9254652-4E41-DF46-6DE8-33FBE35BA007</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RESULTADO" id="EC27BC8F-CA65-4806-C31B-E4B2CB5B92C0">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>4AD29F24-CE88-0AEE-181F-404D7401A62F</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>06CA1D22-E6F5-F8F3-E241-409C416C09DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTO_APROBADO" id="CC7644CC-95CA-5C0C-C160-07B9F0F76D9D">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>A71FCB10-054C-DC3C-6A98-6530A990BEDF</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4C4B5B9C-E1B1-0ACE-AAF7-1FA2FB7DB009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEA_APROBADA" id="8B9FC79A-FDDE-68C9-2951-C10E37BF06C1">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>3A1A7AC4-F1FC-FDAE-0E3E-D3DFFAF24FA0</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A287855B-D409-8AC6-9EC5-E223BF7CE328</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUOTA_APROBADA" id="D1A0FCFA-5D49-0FC4-D128-C525673E578F">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>FA44C370-82D3-64F6-CDE5-6AFA25546421</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4C4B5B9C-E1B1-0ACE-AAF7-1FA2FB7DB009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MOTIVO_RECHAZO" id="C6F8125F-FBE3-C53F-5A9A-58A4DC68AE03">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>17D7E889-7A42-4DBC-35E6-F59145D1D499</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2584FBED-7B9A-4786-6D7E-A8D047BAA3FA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C813D95-2559-C5B8-81D5-1972FC29BCBB" name="PK_EVALUACIONES">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>25199732-7564-209A-B91F-CD3E968D0B9B</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E347BB91-A257-C7F7-CA4C-225C0DD60487</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
