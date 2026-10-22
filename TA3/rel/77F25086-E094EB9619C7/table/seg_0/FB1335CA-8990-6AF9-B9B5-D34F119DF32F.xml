@@ -1,0 +1,290 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB1335CA-8990-6AF9-B9B5-D34F119DF32F" name="CRE_SOLICITUDES">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>C5DF102C-4059-D740-9408-2FD5530DC3FB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOLICITUD_ID" id="278CDF17-E085-6396-698F-2733C47D7679">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>A0F29E18-C6A6-0A42-DC04-5F5633798EAA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_SOLICITUD" id="0685A9CC-BAB6-C719-69EB-1119827E0983">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>2ED830CE-24F1-1890-C1FC-87F8FF16BE21</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A9254652-4E41-DF46-6DE8-33FBE35BA007</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONEDA" id="B565B6C9-6C9E-177B-54C2-9B7EBDF63BAF">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>190750E9-77C1-0EEC-F1FC-EC468ACAEB1A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>659EAFBB-8610-B059-3E47-DCA21A8DAF63</domain>
+<defaultValue>&apos;PEN&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO_SOLICITADO" id="2A7B385C-60AE-16E2-A546-E4638F959BCE">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>9D391008-E8F5-1926-3329-28D35B685871</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4C4B5B9C-E1B1-0ACE-AAF7-1FA2FB7DB009</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAZO_MESES" id="BEB36780-FB29-C724-A95A-FE95221F22D8">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>248947E2-9E7A-1F65-4395-6C638460B9C3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A32BAFB5-3C41-AB5C-EE1B-AD864C15D5B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="FD936BAA-C3C2-49B0-E082-723C34CCDA1F">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>9A9BF811-450B-8681-8A3A-387BDAC08DA6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>&apos;REGISTRADA&apos;</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_ID" id="62E27D1B-1126-82CF-69B8-2D122B144DAC">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>001B6DC7-198B-DD08-9519-EDF4BC28189B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17DFFB3F-F4EC-1AD7-3975-57743C41AD0C" referredColumn="72CDF936-C332-5357-09F5-72BDD5527A09"/>
+</associations>
+</Column>
+<Column name="CLIENTE_ID" id="D6571F5C-42C1-CE63-63FF-38CD93EF70B0">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>06BC0034-25B3-D744-570D-FE23F7CF5B20</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC41944F-4E22-0A6D-E2F9-6841945F5E92" referredColumn="7215697B-281B-B7FC-A3F7-DE5B659BDDDD"/>
+</associations>
+</Column>
+<Column name="CUENTA_ID" id="D856CB5D-4723-7B66-C19F-66595CE18BB6">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>78FC0B53-8FDA-9F71-F916-2009B0E91151</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="298B097A-0FA3-D7EB-8E4F-5F979E2A9CEE" referredColumn="B088FF14-93E1-31BD-2B3A-FB042BE38BE6"/>
+</associations>
+</Column>
+<Column name="FUNCIONARIO_ID" id="F762191C-FA2B-31A0-1C84-8AFC90FCEA7E">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>D50C3515-4026-4AF3-07F2-0307A0CF2819</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="06D803D3-B733-1822-6565-8370300E841F" referredColumn="7A345182-81AF-3702-4747-CFF4FFE6117C"/>
+</associations>
+</Column>
+<Column name="JEFE_SERVICIO_ID" id="7B594904-DED2-C77C-72BD-9E9B2CE9E652">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>70C17FFD-C9E3-6202-C075-0ED31090210F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B27DA93A-CD0C-F521-349D-ECC0A0790FB1" referredColumn="7A345182-81AF-3702-4747-CFF4FFE6117C"/>
+</associations>
+</Column>
+<Column name="FECHA_VISTO_BUENO" id="7ED8F4EA-8FFC-7A21-6D8C-26DCC8BEF34D">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>3C9B20B3-2A02-C94E-5672-9A5380C24D99</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>A9254652-4E41-DF46-6DE8-33FBE35BA007</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION_REVISION" id="D169C269-A67A-3BB4-ADAF-F30FB728E19C">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>C3617213-D69D-6A18-96B0-AD7E55668119</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2584FBED-7B9A-4786-6D7E-A8D047BAA3FA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1B9E598-DDF4-F8B5-101F-F59E7870C251" name="PK_SOLICITUDES">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>6A9CBE94-E851-06F7-64F7-A8B2B66B1DEF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="278CDF17-E085-6396-698F-2733C47D7679"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EFABF9A-9B9A-D0D7-D42A-87604F2F585E" name="FK_SOLICITUDES_CLIENTES">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6571F5C-42C1-CE63-63FF-38CD93EF70B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0990F053-15E9-39FC-C385-53366D7D5C30" name="FK_SOLICITUDES_CUENTAS">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D856CB5D-4723-7B66-C19F-66595CE18BB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2A69D66-0DC7-42AB-3EAB-40243FE0E967" name="FK_SOLICITUDES_FUNCIONARIO">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F762191C-FA2B-31A0-1C84-8AFC90FCEA7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5467EAD-EE0E-79C8-D9BD-14893E6710C2" name="FK_SOLICITUDES_JEFE_SERVICIO">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B594904-DED2-C77C-72BD-9E9B2CE9E652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DE52C5E-DB80-8D72-FCE7-91F00EE273AA" name="FK_SOLICITUDES_PRODUCTOS">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62E27D1B-1126-82CF-69B8-2D122B144DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SOLICITUDES_MONEDA" directorySegmentName="seg_0" id="B1ED626D-B129-4B42-0CF0-9EE24D02F17B">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>1F63359C-878C-5482-C3C8-B227E2EC4FA9</importedID>
+<rule><![CDATA[MONEDA IN ('PEN','USD')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SOLICITUDES_MONTO_POSITIVO" directorySegmentName="seg_0" id="6A3B6FB7-243E-2CC3-CEF6-FE54748FA914">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>A158A778-351A-3B66-8DFD-EA91FA38658D</importedID>
+<rule><![CDATA[MONTO_SOLICITADO > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SOLICITUDES_PLAZO_POSITIVO" directorySegmentName="seg_0" id="2A874827-1861-F03E-0CDC-AF0DB8A7E696">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>69DB870A-EFC6-073E-A5DD-2CDDB63D3B7C</importedID>
+<rule><![CDATA[PLAZO_MESES > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SOLICITUDES_ESTADO" directorySegmentName="seg_0" id="27EE459C-CE23-2A91-72E9-2962252F4EFF">
+<sourceDDLFile>Grupo07_Modelo_Logico.sql</sourceDDLFile>
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:24:01 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<importedID>40D602BE-B90D-49E2-81F7-AF3F9DD9559A</importedID>
+<rule><![CDATA[ESTADO IN ('REGISTRADA','EN_EVALUACION','APROBADA','RECHAZADA', 'EN_EXCEPCION','FORMALIZADA','DESEMBOLSADA')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

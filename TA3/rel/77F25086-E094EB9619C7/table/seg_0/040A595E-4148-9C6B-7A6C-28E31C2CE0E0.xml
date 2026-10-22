@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="040A595E-4148-9C6B-7A6C-28E31C2CE0E0" name="CRE_EMPLEOS">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:28:14 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLEO_ID" id="A4C77B58-4D18-435B-5CF4-7597854A3016">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:29:24 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARGO" id="95CCBDB8-FFDB-6D16-3DA8-BC441D5C53AD">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:39:30 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INGRESO" id="B16771FB-DC44-EB43-E342-E62CF919D0BC">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:39:45 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="F03C47C2-914F-999F-FE7B-D89A3338DF6B">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:39:55 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_ID" id="692A71D6-004B-5977-6694-4AE1DBC56D02">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:41:40 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84D5496E-3469-1543-FCAD-6439D22D373B" referredColumn="7215697B-281B-B7FC-A3F7-DE5B659BDDDD"/>
+</associations>
+</Column>
+<Column name="EMPLEADOR_ID" id="C509E8C6-30DD-0351-4180-E508E2ACE514">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:42:58 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="143D4AF9-579E-59A5-6E61-B81162707688" referredColumn="E1F589C5-5C47-6D7E-B5E6-85C9F98C2DC0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7F9B429-C627-8020-5041-C109CB33C9DA" name="CRE_EMPLEOS_PK">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:29:24 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4C77B58-4D18-435B-5CF4-7597854A3016"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8377AC1-C1C0-9B91-4B81-823324391D83" name="CLIENTE_ID">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:41:40 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="692A71D6-004B-5977-6694-4AE1DBC56D02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4B21368-4502-2336-0FCF-5D056C2EC1A7" name="EMPLEADOR_ID">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:42:58 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C509E8C6-30DD-0351-4180-E508E2ACE514"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

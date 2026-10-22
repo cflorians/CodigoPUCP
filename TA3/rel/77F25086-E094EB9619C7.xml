@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="77F25086-213A-19C6-B328-E094EB9619C7" mainViewID="7D7AB0BB-000A-0336-C0E6-7199AC41F2CC">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:23:46 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>Grupo07_Modelo_Logico.sql</fileName>
+<pathName>D:\Downloads</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>
