@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DOCUMENTOS_EXCEPCIONES" directorySegmentName="seg_0" id="53D9FE90-C677-59B8-01ED-7BC48F6FA2ED">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>228BEDB4-8219-B9D9-65A0-B15C408B5598</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<sourcePk>3F3C1DC9-555D-5B51-F62A-F1844017C530</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7346D000-BDF4-BBD9-CBC1-A39FD20B4290</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2984B573-B532-D2E0-A46C-82D54CAD954E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

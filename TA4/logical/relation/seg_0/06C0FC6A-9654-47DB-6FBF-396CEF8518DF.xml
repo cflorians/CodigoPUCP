@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EVALUADOS_EVALUACIONES" directorySegmentName="seg_0" id="06C0FC6A-9654-47DB-6FBF-396CEF8518DF">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>E513A0A5-8BCD-9E1F-E7F9-1C8C9C6252A9</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<sourcePk>3C813D95-2559-C5B8-81D5-1972FC29BCBB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CA432A79-B7C8-1FD0-43AD-658C0761025D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FFAA7C66-A38F-24A3-42FB-65A72086886C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

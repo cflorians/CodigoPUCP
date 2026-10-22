@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_KYC_CLIENTES" directorySegmentName="seg_0" id="1F917669-1DEA-7A61-728F-A32158902D57">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>E8C674B0-416A-F268-5DB0-4BD34E191F2A</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<sourcePk>DF9E2D7C-4753-0733-DAC4-E1EDD6CD5D26</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E0CFD8C4-6510-F842-7C74-40ACFA91751B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2E2720BD-3B77-6435-62C2-F55F5A54F511</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

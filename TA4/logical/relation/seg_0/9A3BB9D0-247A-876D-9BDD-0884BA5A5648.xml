@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_SOLICITUDES_PRODUCTOS" directorySegmentName="seg_0" id="9A3BB9D0-247A-876D-9BDD-0884BA5A5648">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-21 02:26:35 UTC</createdTime>
+<generatorID>17DFFB3F-F4EC-1AD7-3975-57743C41AD0C</generatorID>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<sourcePk>0055C735-C3A8-78F6-FD06-3844643E2F9E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>28BB83F1-23A0-7BF6-9DFE-0BEFF1494228</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0FB277BB-9E24-D741-DA01-E49C767D3838</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
