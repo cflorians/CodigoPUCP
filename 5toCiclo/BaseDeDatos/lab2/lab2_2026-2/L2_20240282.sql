@@ -1,0 +1,54 @@
+-- Pregunta 1
+
+SELECT s.NOMBRE AS SEDE, p.NOMBRE AS PLAN_MEMBRESIA, COUNT(*) AS CANTIDAD_MEMBRESIAS, SUM(p.PRECIO) AS RECAUDACION_TOTAL
+FROM GT_SEDES s
+INNER JOIN GT_MEMBRESIAS m ON m.SEDE_ID = s.SEDE_ID
+INNER JOIN GT_PLANES_MEMBRESIA p ON p.PLAN_ID = m.PLAN_ID
+WHERE m.ESTADO = 'V' -- Membresias estan actualmente vigentes
+GROUP BY s.NOMBRE, p.NOMBRE
+HAVING SUM(p.PRECIO) >= 300.00 -- Recaudacion total acumulada mayor o igual a 300.00
+ORDER BY RECAUDACION_TOTAL DESC, SEDE; 
+
+-- Pregunta 2
+
+SELECT s.SOCIO_ID, s.NOMBRES || ' ' || s.APE_PATERNO || ' ' || s.APE_MATERNO AS SOCIO, s.TELEFONO, s.CORREO, se.NOMBRE AS SEDE, m.FECHA_FIN AS FECHA_VENCIMIENTO
+FROM GT_SOCIOS s
+INNER JOIN GT_MEMBRESIAS m ON s.SOCIO_ID = m.SOCIO_ID
+INNER JOIN GT_SEDES se ON m.SEDE_ID = se.SEDE_ID
+WHERE FECHA_FIN BETWEEN TO_DATE('2026-08-25', 'YYYY-MM-DD') -- venceran en una fecha entre 
+      AND TO_DATE('2026-09-01', 'YYYY-MM-DD') -- hasta
+ORDER BY FECHA_VENCIMIENTO;
+
+-- Pregunta 3
+
+SELECT s.SOCIO_ID, s.NOMBRES || ' ' || s.APE_PATERNO || ' ' || s.APE_MATERNO AS SOCIO, s.CORREO, p.NOMBRE AS PLAN_ACTUAL, COUNT(*) AS TOTAL_INASISTENCIAS
+FROM GT_SOCIOS s
+INNER JOIN GT_MEMBRESIAS m ON s.SOCIO_ID = m.SOCIO_ID
+INNER JOIN GT_PLANES_MEMBRESIA p ON m.PLAN_ID = p.PLAN_ID
+INNER JOIN GT_RESERVAS r ON s.SOCIO_ID = r.SOCIO_ID
+WHERE r.ASISTIO = 'N' -- no asistio
+      AND EXTRACT(MONTH FROM r.FECHA_RESERVA) = 8 -- en agosto
+      AND EXTRACT(YEAR FROM r.FECHA_RESERVA) = 2026 -- en 2026
+      AND m.ESTADO = 'V' -- membresias vigentes
+GROUP BY s.SOCIO_ID, s.NOMBRES || ' ' || s.APE_PATERNO || ' ' || s.APE_MATERNO, s.CORREO, p.NOMBRE
+HAVING COUNT(*) >= 3; -- 3 o más inasistencias
+
+-- Pregunta 4
+
+UPDATE GT_SOCIOS
+SET ESTADO = 'I'
+WHERE SOCIO_ID NOT IN(SELECT DISTINCT SOCIO_ID -- a socios que no
+                      FROM GT_MEMBRESIAS
+                      WHERE ESTADO = 'V'); -- tienen membresia activa
+
+-- Pregunta 5
+
+SELECT s.SOCIO_ID, s.NOMBRES || ' ' || s.APE_PATERNO || ' ' || s.APE_MATERNO AS NOMBRE_COMPLETO, s.CORREO, r.RUTINA_ID
+FROM GT_SOCIOS s
+INNER JOIN GT_RUTINAS r ON s.SOCIO_ID = r.SOCIO_ID
+INNER JOIN GT_MEMBRESIAS m ON s.SOCIO_ID = m.SOCIO_ID
+WHERE r.EVALUACION_ID IS NULL -- sin evaluación física previa
+      AND r.ESTADO = 'V' -- rutina vigente
+      AND s.ESTADO NOT IN ('I') -- Cuentan con una membresía vigente al momento del análisis
+GROUP BY s.SOCIO_ID, s.NOMBRES || ' ' || s.APE_PATERNO || ' ' || s.APE_MATERNO, s.CORREO, r.RUTINA_ID
+HAVING COUNT(*) > 1; -- han contratado membresías en más de una sede distinta a lo largo de su historial de afiliación
