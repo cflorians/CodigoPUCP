@@ -77,11 +77,12 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>9A9BF811-450B-8681-8A3A-387BDAC08DA6</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>96495A90-D909-EBB3-1490-FB8636F1F7CE</domain>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
 <defaultValue>&apos;REGISTRADA&apos;</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="PRODUCTO_ID" id="62E27D1B-1126-82CF-69B8-2D122B144DAC">

@@ -67,10 +67,11 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>A96856F9-52C4-7A92-CA69-2546C96C7358</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>96495A90-D909-EBB3-1490-FB8636F1F7CE</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

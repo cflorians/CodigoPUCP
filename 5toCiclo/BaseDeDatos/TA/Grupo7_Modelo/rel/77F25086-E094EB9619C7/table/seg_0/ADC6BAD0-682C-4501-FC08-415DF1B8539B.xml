@@ -15,10 +15,11 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>7E84EECE-62D1-2B42-A30C-BC5AF8DBF91F</importedID>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SOLICITUD_ID" id="8060440E-C86B-386F-43C3-4C02D89B6B65">
@@ -58,10 +59,11 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>2E4C19E0-C843-6E8C-5C01-192C7284C99A</importedID>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<domain>06CA1D22-E6F5-F8F3-E241-409C416C09DB</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA_GENERACION" id="BACA8CD0-5A97-D243-8E94-94F787449453">
@@ -96,11 +98,12 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>A30D2A02-4A0B-21F7-56DA-ABAF65AB9BBF</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>FA6B785E-E667-99C3-FCDA-DD9B312D904D</domain>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
 <defaultValue>&apos;PENDIENTE&apos;</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ESTADO_VALIDACION" id="A4AA5FCC-FAC2-32A8-69CE-9DFE10CCB562">
@@ -109,11 +112,12 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>3AF3ED5F-67B8-3760-2F1F-ECAAC896AF7F</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>FA6B785E-E667-99C3-FCDA-DD9B312D904D</domain>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
 <defaultValue>&apos;PENDIENTE&apos;</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

@@ -56,8 +56,8 @@
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>957DE628-13B7-62CE-35D5-7159E578601B</importedID>
 <use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>06CA1D22-E6F5-F8F3-E241-409C416C09DB</domain>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>1EE9B80A-EA9B-9661-BF80-7DF0B7D416D7</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

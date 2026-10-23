@@ -3,7 +3,7 @@
 <createdBy>carlos</createdBy>
 <createdTime>2026-10-21 02:23:46 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
+<shouldBeOpen>true</shouldBeOpen>
 <selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
 <importDDLFileStamps>
 <importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">

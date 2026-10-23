@@ -16,23 +16,23 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6D2FDF1C-E9C8-849D-B22E-9EBBDC8A1EC5" otype="Table" vid="814B5E28-7C74-EBCB-B949-0ECA3EFCF677">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="401" y="46" width="277" height="152"/>
+<bounds x="401" y="46" width="277" height="150"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="ADC6BAD0-682C-4501-FC08-415DF1B8539B" otype="Table" vid="0E72FC1C-EEB4-E581-45E2-47C4608EC26D">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1116" y="396" width="293" height="194"/>
+<bounds x="1116" y="396" width="293" height="192"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="D6283B3A-9968-45EF-AAEA-AF56B89E7648" otype="Table" vid="DD7F7576-9400-548D-1449-C8033E513749">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="73" y="412" width="324" height="166"/>
+<bounds x="73" y="412" width="324" height="164"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DEB4401F-FF37-81E0-7594-8CBF0E11BD00" otype="Table" vid="0C61CBE6-5638-36DD-4E76-36B0514D8CBD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="820" y="42" width="306" height="166"/>
+<bounds x="820" y="42" width="306" height="164"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FB1335CA-8990-6AF9-B9B5-D34F119DF32F" otype="Table" vid="F9C48C71-5DB2-117D-C621-80D440BB203F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="591" y="352" width="314" height="306"/>
+<bounds x="591" y="352" width="314" height="304"/>
 </OView>
 </objectViews>
 <connectors>
@@ -41,7 +41,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="607" y="198"/>
+<point x="607" y="196"/>
 <point x="608" y="352"/>
 </points>
 </Connector>
@@ -59,7 +59,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="862" y="208"/>
+<point x="862" y="206"/>
 <point x="862" y="352"/>
 </points>
 </Connector>
@@ -77,7 +77,7 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="649" y="198"/>
+<point x="649" y="196"/>
 <point x="649" y="352"/>
 </points>
 </Connector>

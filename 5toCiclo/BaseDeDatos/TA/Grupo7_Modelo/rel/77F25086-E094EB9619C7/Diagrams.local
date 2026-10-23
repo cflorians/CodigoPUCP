@@ -1,9 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="sub_view" objectID="0970A2E2-5C65-AB32-CDE0-FE29D1BE2422" name="Relational_1 - SubView_1v1" visible="true"/>
    <object objectType="sub_view" objectID="0DECCFB7-7727-6B6E-BBF3-F7030E32407B" name="Seleccion de seguro y simulacion" visible="true"/>
-   <object objectType="sub_view" objectID="10F4CE93-7DDF-4F22-45D1-0E197356B089" name="Evaluacion crediticia y excepciones" visible="true"/>
+   <object objectType="sub_view" objectID="10F4CE93-7DDF-4F22-45D1-0E197356B089" name="Evaluacion crediticia y excepciones" visible="false"/>
    <object objectType="sub_view" objectID="5F048EF6-8B33-93FE-7CBF-95B53EAD322E" name="Atencion, validacion e identificacion del solicitante" visible="true"/>
-   <object objectType="sub_view" objectID="72FC89F2-A256-EEAD-A9B6-7827AB2305F4" name="Gestion de clientes y datos personales" visible="true"/>
+   <object objectType="sub_view" objectID="72FC89F2-A256-EEAD-A9B6-7827AB2305F4" name="Gestion de clientes y datos personales" visible="false"/>
+   <object objectType="sub_view" objectID="7B0452EB-078F-C9A3-F8F9-F8AD55F3D7EF" name="Relational_1 - SubView_1v2" visible="true"/>
    <object objectType="main_view" objectID="7D7AB0BB-000A-0336-C0E6-7199AC41F2CC" name="Relational_1" visible="true"/>
    <object objectType="sub_view" objectID="E29910E4-88F8-8D1D-DA28-716BDEE5E53B" name="Formalizacion y desembolso" visible="true"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

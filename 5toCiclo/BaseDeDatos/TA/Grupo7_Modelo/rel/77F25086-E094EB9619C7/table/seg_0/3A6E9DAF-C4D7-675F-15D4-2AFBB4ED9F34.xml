@@ -67,11 +67,12 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>59258F7D-E4F9-C63F-F4A7-F6E8FB11E062</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>FA6B785E-E667-99C3-FCDA-DD9B312D904D</domain>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
 <defaultValue>&apos;PENDIENTE&apos;</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FECHA_RESOLUCION" id="301AD4B6-B035-1486-DB4A-4E47B17B98CE">

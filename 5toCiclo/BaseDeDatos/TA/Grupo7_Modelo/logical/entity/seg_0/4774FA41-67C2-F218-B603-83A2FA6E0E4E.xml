@@ -110,6 +110,19 @@
 <domain>4C4B5B9C-E1B1-0ACE-AAF7-1FA2FB7DB009</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ES_CLIENTE" id="7C7DC785-5073-593B-67AC-C91AFE618D65">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:38:28 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<engineerTo>
+<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="919AD3C4-AE1F-B2A4-15CE-C140BD908C4C" name="PK_CONYUGES">

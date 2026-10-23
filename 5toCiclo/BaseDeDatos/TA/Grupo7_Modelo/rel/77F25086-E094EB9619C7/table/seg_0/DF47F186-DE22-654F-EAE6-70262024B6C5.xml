@@ -88,10 +88,11 @@
 <createdTime>2026-10-21 02:24:01 UTC</createdTime>
 <ownerDesignName>Grupo7_Modelo</ownerDesignName>
 <importedID>002FD580-7395-27E3-B360-A227F43E4F28</importedID>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>96495A90-D909-EBB3-1490-FB8636F1F7CE</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="TELEFONO" id="832D3777-8D8D-0228-8074-1712B8F45DAA">
@@ -131,9 +132,6 @@
 <domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A90F6CAE-6C38-ED7D-5226-7EAE765CDC46" referredColumn="E1F589C5-5C47-6D7E-B5E6-85C9F98C2DC0"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -160,16 +158,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8193D8AE-C513-358C-0903-53352D0A192A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="18252460-8441-0AE9-472C-36D13566E532" name="FK_CLIENTES_EMPLEADORES">
-<createdBy>carlos</createdBy>
-<createdTime>2026-10-21 02:24:01 UTC</createdTime>
-<ownerDesignName>Grupo7_Modelo</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="748AE03E-AE7A-1B46-4056-E8C7294C5B75"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

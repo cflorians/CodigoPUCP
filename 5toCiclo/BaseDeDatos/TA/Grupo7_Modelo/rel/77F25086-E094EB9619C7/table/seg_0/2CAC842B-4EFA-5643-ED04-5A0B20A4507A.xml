@@ -98,6 +98,17 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="ES_CLIENTE" id="1BB6061F-2D86-FB0D-6505-24D09E70D375">
+<createdBy>carlos</createdBy>
+<createdTime>2026-10-22 01:38:03 UTC</createdTime>
+<ownerDesignName>Grupo7_Modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B107C3D9-DE07-554B-8698-1D8B0B3FF81E" name="PK_CONYUGES">

@@ -136,20 +136,6 @@
 <domain>13C2703C-FD9A-5F7A-9426-1B2A10430448</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="EMPLEADOR_ID" id="5D6009C2-150B-C1FC-B8C3-19DDA78A4579">
-<createdBy>carlos</createdBy>
-<createdTime>2026-10-21 02:26:35 UTC</createdTime>
-<generatorID>39D1C244-8CE6-CFF6-5245-9C2FF712982C</generatorID>
-<ownerDesignName>Grupo7_Modelo</ownerDesignName>
-<engineerTo>
-<item key="77F25086-213A-19C6-B328-E094EB9619C7" value="true"/>
-</engineerTo>
-<referedAttribute>3257D41F-9CDA-DDED-2DFA-7C4E1C19C621</referedAttribute>
-<use>0</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<domain>1DC2813E-8CEC-B865-D884-FC379DC573DD</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DF9E2D7C-4753-0733-DAC4-E1EDD6CD5D26" name="PK_CLIENTES">
