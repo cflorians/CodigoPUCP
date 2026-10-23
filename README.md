@@ -36,17 +36,6 @@ Las carpetas con nombres como `Lab3_2025-1` o `Ex2_2024-2` son laboratorios o ex
 | Algoritmos Avanzados | `AlgoritmosAvanzados` | C++ | Backtracking, programación dinámica, algoritmos voraces y heurísticas |
 | Arquitectura de Computadoras | `ArquitecturaComputadoras` | Logisim Evolution | Computadora de 8 bits construida en clase (GRIDHO), ROMs, periféricos |
 
-## Cómo ejecutar
-
-- **C / C++:** la mayoría de proyectos incluye `CMakeLists.txt`; se abren directamente en CLion o se compilan con:
-  ```bash
-  cmake -S . -B build && cmake --build build
-  ```
-  Algunos leen archivos `.txt` o `.csv` que están en la misma carpeta; colócalos en el directorio de trabajo antes de ejecutar.
-- **Java:** proyectos de IntelliJ IDEA (archivos `.iml`, código en `src/`).
-- **SQL:** scripts para Oracle SQL Developer.
-- **Logisim:** archivos `.circ`, se abren con [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution).
-
 ## Autor
 
 Carlos Gabriel Florian Silva — estudiante de Ingeniería Informática, PUCP
