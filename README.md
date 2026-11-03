@@ -21,7 +21,7 @@ CodigoPUCP/
 │   └── Heuristicas/
 └── ArquitecturaComputadoras/   # 6.º ciclo
 	├── Assembly/
-    └── Logisim/
+	└── Logisim/
 ```
 
 Las carpetas con nombres como `Lab3_2025-1` o `Ex2_2024-2` son laboratorios o exámenes de ciclos anteriores resueltos como práctica.
