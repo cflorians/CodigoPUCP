@@ -30,3 +30,6 @@ Makefile
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Ignora el manual de Intel en ArquitecturaComputadoras/Assembly
+git rm --cached "Intel manual vol 2.pdf"
