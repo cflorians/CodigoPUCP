@@ -1,66 +1,60 @@
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;DEFINITIONS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;DEFINITIONS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-.arch armv8-a
-.equ LOAD_ADDRESS, 0x8000
-.equ CODE_SIZE, END-START // everything beyond the HEADER is code
+%define LOAD_ADDRESS 0x00020000 ; pretty much any number >0 works
+%define CODE_SIZE END-(LOAD_ADDRESS+0x78) ; everything beyond the HEADER is code
 
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;HEADER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;HEADER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-//.org LOAD_ADDRESS
+BITS 64
+org LOAD_ADDRESS
 ELF_HEADER:
-	.byte 0x7F,'E','L','F' // magic number to indicate ELF file
-	.byte 0x02 // 0x1 for 32-bit, 0x2 for 64-bit
-	.byte 0x01 // 0x1 for little endian, 0x2 for big endian
-	.byte 0x01 // 0x1 for current version of ELF
-	.byte 0x00 // 0x9 for FreeBSD, 0x3 for Linux (doesn't seem to matter)
-	.byte 0x00 // ABI version (ignored?)
-	.fill 7, 1, 0x00 // 7 padding bytes
-	.short 0x0002 // executable file
-	.short 0x00B7 // ARMv8a
-	.word 0x00000001 // version 1
-	.quad LOAD_ADDRESS+0x78 // entry point for our program
-	.quad 0x0000000000000040 // 0x40 offset from ELF_HEADER to PROGRAM_HEADER
-	.quad 0x0000000000000000 // section header offset (we don't have this)
-	.word 0x00000000 // unused flags
-	.short 0x0040 // 64-byte size of ELF_HEADER
-	.short 0x0038 // 56-byte size of each program header entry
-	.short 0x0001 // number of program header entries (we have one)
-	.short 0x0000 // size of each section header entry (none)
-	.short 0x0000 // number of section header entries (none)
-	.short 0x0000 // index in section header table for section names (waste)
+	db 0x7F,"ELF" ; magic number to indicate ELF file
+	db 0x02 ; 0x1 for 32-bit, 0x2 for 64-bit
+	db 0x01 ; 0x1 for little endian, 0x2 for big endian
+	db 0x01 ; 0x1 for current version of ELF
+	db 0x09 ; 0x9 for FreeBSD, 0x3 for Linux (doesn't seem to matter)
+	db 0x00 ; ABI version (ignored?)
+	times 7 db 0x00 ; 7 padding bytes
+	dw 0x0002 ; executable file
+	dw 0x003E ; AMD x86-64 
+	dd 0x00000001 ; version 1
+	dq START ; entry point for our program
+	dq 0x0000000000000040 ; 0x40 offset from ELF_HEADER to PROGRAM_HEADER
+	dq 0x0000000000000000 ; section header offset (we don't have this)
+	dd 0x00000000 ; unused flags
+	dw 0x0040 ; 64-byte size of ELF_HEADER
+	dw 0x0038 ; 56-byte size of each program header entry
+	dw 0x0001 ; number of program header entries (we have one)
+	dw 0x0000 ; size of each section header entry (none)
+	dw 0x0000 ; number of section header entries (none)
+	dw 0x0000 ; index in section header table for section names (waste)
 PROGRAM_HEADER:
-	.word 0x00000001 // 0x1 for loadable program segment
-	.word 0x00000007 // read/write/execute flags
-	.quad 0x0000000000000078 // offset of code start in file image (0x40+0x38)
-	.quad LOAD_ADDRESS+0x78 // virtual address of segment in memory
-	.quad 0x0000000000000000 // physical address of segment in memory (ignored?)
-	.quad CODE_SIZE // size (bytes) of segment in file image
-	.quad CODE_SIZE // size (bytes) of segment in memory
-	.quad 0x0000000000000000 // alignment (doesn't matter, only 1 segment)
+	dd 0x00000001 ; 0x1 for loadable program segment
+	dd 0x00000007 ; read/write/execute flags
+	dq 0x0000000000000078 ; offset of code start in file image (0x40+0x38)
+	dq LOAD_ADDRESS+0x78 ; virtual address of segment in memory
+	dq 0x0000000000000000 ; physical address of segment in memory (ignored?)
+	dq CODE_SIZE ; size (bytes) of segment in file image
+	dq CODE_SIZE ; size (bytes) of segment in memory
+	dq 0x0000000000000000 ; alignment (doesn't matter, only 1 segment)
 
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;INSTRUCTIONS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;INCLUDES;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-START:	// address label representing the entry point of our program
+	; external assembly files will be included here
 
-	b . // jump here (to START label) forever
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;INSTRUCTIONS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-	// Successful exit
-//	mov x0, #33
-//	mov w8, #93
-//	svc #0
+START:	; address label representing the entry point of our program
 
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;INCLUDES;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	jmp START ; jump to start label (above)
 
-	// external assembly files will be included here
+END:	; address label representing the end of our program
 
-//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-END:	// address label representing the end of our program
