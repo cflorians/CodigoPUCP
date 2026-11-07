@@ -52,9 +52,6 @@ PROGRAM_HEADER:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;INSTRUCTIONS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-arreglo:
-	dq 7,3,10,4,5,2,6
-
 START:	; address label representing the entry point of our program
 
 _start:
@@ -65,5 +62,8 @@ adios:
 	mov rdi, rax ; movemos a rdi el resultado devuelto por la subrutina
 	mov al, 60
 	syscall
+
+arreglo:
+	dq 7,3,10,4,5,2,6
 
 END:	; address label representing the end of our program
