@@ -33,3 +33,5 @@ desktop.ini
 
 # Ignora el manual de Intel en ArquitecturaComputadoras/Assembly
 Intel manual vol 2.pdf
+# Ignora el documento ABI en ArquitecturaComputadoras/Assembly
+ABI.pdf 
