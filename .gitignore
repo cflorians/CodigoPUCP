@@ -35,3 +35,6 @@ desktop.ini
 Intel manual vol 2.pdf
 # Ignora el documento ABI en ArquitecturaComputadoras/Assembly
 ABI.pdf 
+
+# Ignora los ejecutables de ArquitecturaComputadoras/Assembly
+ArquitecturaComputadoras/Assembly/**/exe_*
