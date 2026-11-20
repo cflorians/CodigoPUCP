@@ -38,3 +38,5 @@ ABI.pdf
 
 # Ignora los ejecutables de ArquitecturaComputadoras/Assembly
 ArquitecturaComputadoras/Assembly/**/exe_*
+# Ignora los .o de ArquitecturaComputadoras/Assembly
+ArquitecturaComputadoras/Assembly/**/*.o
